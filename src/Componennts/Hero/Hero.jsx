@@ -20,7 +20,7 @@ const Hero = () => {
             <a className="btn-primary">
            Place  Donation  <i className="fas fa-arrow-right"></i>
             </a>
-            <a href="#" className="btn-secondary">
+            <a href="https://youtu.be/O8iq36U6fS0?si=ClfZwx1UvPyAii71" className="btn-secondary">
               Watch A Video <i className="fas fa-play"></i>
             </a>
           </div>

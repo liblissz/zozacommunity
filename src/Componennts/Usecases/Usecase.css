@@ -1,0 +1,70 @@
+.use-cases-tabs {
+  margin-top: 3rem;
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition);
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  color: var(--primary-color);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  border-radius: 4px 4px 0 0;
+}
+
+.tab-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-text p,
+.tab-text ul {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+.tab-text ul li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tab-text ul li::before {
+  content: '•';
+  font-weight: 700;
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}

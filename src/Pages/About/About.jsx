@@ -15,7 +15,7 @@ const About = () => {
             <div className="orange">
               <span className="mango"> About ZOZAC</span>
               <h2>
-                Who We Are:<br /><br /><br /> We have been existing since  2012
+                Who We Are:<br /> We have been existing since  2012
               </h2>
               <div className="text">
                ZOZAC – Zonal Organization for Zonal African Cooperation – is a pan-African platform 

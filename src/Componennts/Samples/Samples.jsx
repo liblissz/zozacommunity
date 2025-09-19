@@ -68,10 +68,13 @@ const Samples = () => {
       <section id="samples" className="samples">
         <div className="container">
           <div className="section-header">
-            <h2 style={{fontSize: "39px"}}>ACTIVITIES 
+            <h2 style={{fontSize: "29px"}}>ACTIVITIES 
               <br/>
-              <p style={{fontSize: "23px"}}>CARRIED OUT
+              <center>
+   <p style={{fontSize: "23px"}}>CARRIED OUT
                 </p>
+              </center>
+           
               </h2>
         
           </div>
@@ -158,7 +161,9 @@ const Samples = () => {
     </span>
   )}
 </p>
-
+<span className="btn-text" onClick={()=> window.location.href = item.price}>
+  Click to See details<i className="fas fa-arrow-right"></i>
+  </span>
                   <Link to={`/posts/${item._id}`}>
                     <span className="btn-text">
                       Read More <i className="fas fa-arrow-right"></i>

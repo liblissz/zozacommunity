@@ -1,66 +1,70 @@
-import React, { useState } from 'react';
-import './Prising.css'
-import { Link } from 'react-router-dom';
-import img from "/img30"
+import React, { useState } from "react";
+import "./Prising.css";
+import { Link } from "react-router-dom";
+import img from "/img30.png"; // ✅ make sure extension is correct
+
 const plans = [
   {
-    name: 'Community Support',
-    description: 'Engaging and uplifting local communities through basic empowerment.',
+    name: "Community Support",
+    description:
+      "Engaging and uplifting local communities through basic empowerment.",
     features: [
-      { label: 'Leadership & capacity building workshops', included: true },
-      { label: 'Introductory ICT & digital skills programs', included: true },
-      { label: 'Vocational discovery sessions', included: true },
-      { label: 'Participation in outreach events', included: true },
+      { label: "Leadership & capacity building workshops", included: true },
+      { label: "Introductory ICT & digital skills programs", included: true },
+      { label: "Vocational discovery sessions", included: true },
+      { label: "Participation in outreach events", included: true },
     ],
-    buttonText: 'Join the Movement',
-    buttonClass: 'btn-secondary',
+    buttonText: "Join the Movement",
+    buttonClass: "btn-secondary",
     popular: false,
   },
   {
-    name: 'Development Track',
-    description: 'Empowering individuals with deeper skills to drive innovation.',
+    name: "Development Track",
+    description:
+      "Empowering individuals with deeper skills to drive innovation.",
     features: [
-      { label: 'Advanced digital & entrepreneurial training', included: true },
-      { label: 'Software development & CMS workshops', included: true },
-      { label: 'Cybersecurity awareness & prep', included: true },
-      { label: 'Community project participation', included: true },
+      { label: "Advanced digital & entrepreneurial training", included: true },
+      { label: "Software development & CMS workshops", included: true },
+      { label: "Cybersecurity awareness & prep", included: true },
+      { label: "Community project participation", included: true },
     ],
-    buttonText: 'Start Growing',
-    buttonClass: 'btn-primary',
+    buttonText: "Start Growing",
+    buttonClass: "btn-primary",
     popular: true,
   },
   {
-    name: 'Partnership Program',
-    description: 'Collaborating with organizations and leaders for larger impact.',
+    name: "Partnership Program",
+    description:
+      "Collaborating with organizations and leaders for larger impact.",
     features: [
-      { label: 'Joint community transformation projects', included: true },
-      { label: 'Peacebuilding & civic engagement programs', included: true },
-      { label: 'Co-hosted events & community forums', included: true },
-      { label: 'Access to ZOZAC digital platforms', included: true },
+      { label: "Joint community transformation projects", included: true },
+      { label: "Peacebuilding & civic engagement programs", included: true },
+      { label: "Co-hosted events & community forums", included: true },
+      { label: "Access to ZOZAC digital platforms", included: true },
     ],
-    buttonText: 'Become a Partner',
-    buttonClass: 'btn-secondary',
+    buttonText: "Become a Partner",
+    buttonClass: "btn-secondary",
     popular: false,
   },
-
-
 ];
 
 const Pricing = () => {
   const [annual, _] = useState(false);
- const pdfFiles = [
-    { title: "Quaterly NewsLetter", url: "/report.pdf" },
-    // { title: "Annual Budget", url: "/pdfs/annual-budget.pdf" },
-    // { title: "Project Proposal", url: "/pdfs/project-proposal.pdf" },
+
+  const pdfFiles = [
+    { title: "Quarterly Newsletter", url: "/report.pdf" },
   ];
 
-
-   const sectionStyle = {
+  // Inline styles
+  const sectionStyle = {
     background: "#f9f9f9",
     width: "100%",
     display: "flex",
-    justifyContent: "center",
-    alignItem: "center"
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexWrap: "wrap",
+    padding: "2rem",
+    gap: "2rem",
   };
 
   const headingStyle = {
@@ -103,83 +107,84 @@ const Pricing = () => {
   return (
     <section id="pricing" className="pricing">
       <div className="container">
+        {/* Newsletter Section */}
         <div className="section-header">
-      <center>
-      <h3 style={{fontSize: "19px"}}>NEWS_LETTER</h3>
-       </center>
-<section style={sectionStyle}>
-      <div>
-        <h2 style={headingStyle}>Our Reports</h2>
-        <div style={gridStyle}>
-          {pdfFiles.map((pdf, index) => (
-            <div style={cardStyle} key={index}>
-              <h3 style={titleStyle}>{pdf.title}</h3>
-              <embed
-                src={pdf.url}
-                type="application/pdf"
-                width="100%"
-                height="400px"
-                style={{ borderRadius: "8px" }}
-              />
-              <a
-                href={pdf.url}
-                download
-                style={buttonStyle}
-                onMouseOver={(e) => (e.target.style.background = "#1e3c10")}
-                onMouseOut={(e) => (e.target.style.background = "#2d5b1a")}
-              >
-                Download PDF
-              </a>
+          <center>
+            <h3 style={{ fontSize: "19px" }}>NEWSLETTER</h3>
+          </center>
+          <section style={sectionStyle}>
+            <div style={{ flex: 1 }}>
+              <h2 style={headingStyle}>Our Reports</h2>
+              <div style={gridStyle}>
+                {pdfFiles.map((pdf, index) => (
+                  <div style={cardStyle} key={index}>
+                    <h3 style={titleStyle}>{pdf.title}</h3>
+                    <embed
+                      src={pdf.url}
+                      type="application/pdf"
+                      width="100%"
+                      height="400px"
+                      style={{ borderRadius: "8px" }}
+                    />
+                    <a
+                      href={pdf.url}
+                      download
+                      style={buttonStyle}
+                      onMouseOver={(e) =>
+                        (e.target.style.background = "#1e3c10")
+                      }
+                      onMouseOut={(e) =>
+                        (e.target.style.background = "#2d5b1a")
+                      }
+                    >
+                      Download PDF
+                    </a>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      <div>
-        <img src={img} style={{hieght: "100px", width: "100px"}} alt="food program" />
+            {/* Right Side Image */}
+            <div style={{ flex: "0 0 300px", textAlign: "center" }}>
+              <img
+                src={img}
+                style={{ height: "200px", width: "200px", borderRadius: "10px" }}
+                alt="food program"
+              />
+            </div>
+          </section>
+        </div>
 
-        </div>
-    </section>
-       
-        </div>
-        <div className="pricing-toggle">
-         
-          <span>
-            Annual <span className="discount">Save 20%</span>
-          </span>
-        </div>
+        {/* Pricing Plans */}
         <div className="pricing-grid">
           {plans.map((plan, index) => (
-            <div key={index} className={`pricing-card ${plan.popular ? 'popular' : ''}`}>
+            <div
+              key={index}
+              className={`pricing-card ${plan.popular ? "popular" : ""}`}
+            >
               {plan.popular && <div className="popular-badge">Most Popular</div>}
               <div className="pricing-header">
                 <h3>{plan.name}</h3>
-                <div className="price">
-                  <span className="monthly" style={{ display: annual ? 'none' : 'inline' }}>
-                    {plan.monthlyPrice}
-                  </span>
-                  <span className="annually" style={{ display: annual ? 'inline' : 'none' }}>
-                    {plan.annualPrice}
-                  </span>
-                  <span className="period"></span>
-                </div>
                 <p>{plan.description}</p>
               </div>
               <div className="pricing-features">
                 <ul>
                   {plan.features.map(({ label, included }, idx) => (
-                    <li key={idx} className={included ? '' : 'disabled'}>
-                      <i className={`fas fa-${included ? 'check' : 'times'}`}></i> {label}
+                    <li key={idx} className={included ? "" : "disabled"}>
+                      <i
+                        className={`fas fa-${included ? "check" : "times"}`}
+                      ></i>{" "}
+                      {label}
                     </li>
                   ))}
                 </ul>
               </div>
-              <Link to={'/order'}>
-              <div className="pricing-footer">
-                <a href="#" className={plan.buttonClass}>
-                  {plan.buttonText}
-                </a>
-              </div>
+              <Link to={"/order"}>
+                <div className="pricing-footer">
+                  <a href="#" className={plan.buttonClass}>
+                    {plan.buttonText}
+                  </a>
+                </div>
               </Link>
             </div>
           ))}
@@ -190,4 +195,3 @@ const Pricing = () => {
 };
 
 export default Pricing;
-

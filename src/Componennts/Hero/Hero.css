@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: slideShow 20s infinite linear;
+  animation: slideShow 8s infinite linear;
   z-index: -1;
   /* dark overlay */
 /*   background-blend-mode: darken; */
@@ -36,7 +36,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img20.jpg");
   }
   40% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/logo1.jpg");
   }
  50% {
     background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img9.jpg");
@@ -45,16 +45,16 @@
     background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img21.jpg");
   }
   70% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img3.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img35.jpg");
   }
   80% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img20.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img34.jpg");
   }
   90% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img21.jpg");
   }
     100% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img3.jpg");
   }
 }
 
@@ -131,6 +131,7 @@
     gap: 1rem;
   }
 }
+
 
 
 

@@ -103,8 +103,9 @@ const Pricing = () => {
     <section id="pricing" className="pricing">
       <div className="container">
         <div className="section-header">
-          <h2>NEWS LETTER</h2>
-       
+      <center>
+      <h3 style={{fontSize: "19px"}}>NEWS_LETTER</h3>
+       </center>
 <section style={sectionStyle}>
       <div>
         <h2 style={headingStyle}>Our PDF Documents</h2>

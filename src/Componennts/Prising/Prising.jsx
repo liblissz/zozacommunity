@@ -55,8 +55,11 @@ const Pricing = () => {
 
 
    const sectionStyle = {
-    padding: "4rem 2rem",
     background: "#f9f9f9",
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItem: "center"
   };
 
   const headingStyle = {

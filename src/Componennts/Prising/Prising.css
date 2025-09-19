@@ -132,3 +132,9 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+@media (max-width: 500px) {
+  .increasesize{
+    position: absolute !important;
+    width: 500px !important;
+  }
+}

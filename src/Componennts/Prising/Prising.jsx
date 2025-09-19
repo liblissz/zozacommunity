@@ -147,7 +147,7 @@ const Pricing = () => {
             <div style={{  textAlign: "center" }}>
               <img
                 src={img}
-                style={{ height: "300px", width: "100%", borderRadius: "10px" }}
+                style={{ height: "300px", width: "300px", borderRadius: "10px" }}
                 alt="food program"
               />
             </div>

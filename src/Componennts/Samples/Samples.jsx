@@ -123,7 +123,7 @@ const Samples = () => {
       <section id="samples" className="samples">
         <div className="container">
           <div className="section-header">
-            <h2>Video Post</h2>
+            {/* <h2>Video Post</h2> */}
             <p>We post videos of our works on a daily</p>
           </div>
 

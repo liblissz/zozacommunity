@@ -32,8 +32,13 @@ const Donate = () => {
       
 
           <div className="donate-section">
-            <h3>📱 Mobile Account Number</h3>
+            <h3>📱 MTN Mobile Account Number</h3>
             <p className="donate-code">+237 674274276</p>
+          </div>
+          
+          <div className="donate-section">
+            <h3>📱 MOMO Name</h3>
+            <p className="donate-code">AFUH ALFRED NGUM</p>
           </div>
         </div>
       )}
@@ -42,4 +47,5 @@ const Donate = () => {
 };
 
 export default Donate;
+
 

@@ -20,8 +20,16 @@ const Donate = () => {
 
           <div className="donate-section">
             <h3>💳 Credit Card Number</h3>
-            <p className="donate-code">1234 5678 9012 3456</p>
+            <p className="donate-code">CM2110002000639000165086873</p>
           </div>
+
+              <div className="donate-section">
+            <h3>Swift Code:
+</h3>
+            <p className="donate-code">BCMACMCXXXX</p>
+          </div>
+          
+      
 
           <div className="donate-section">
             <h3>📱 Mobile Account Number</h3>
@@ -34,3 +42,4 @@ const Donate = () => {
 };
 
 export default Donate;
+

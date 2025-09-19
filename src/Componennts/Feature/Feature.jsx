@@ -61,10 +61,10 @@ const Features = () => {
           </p>
         </div>
         <div className="section-header">
-          <h2>Our Core Services</h2>
+          <h2>Our Core Purpose</h2>
           <p>
-            At ZOZAC Community, we offer a range of impactful services designed to train 
-            leaders, support local businesses, and drive sustainable development in grassroots communities.
+At ZOZAC Community, we offer a range of impactful initiatives designed to train leaders, empower youths,
+            promote Peace & Unity, engage in community projects to drive sustainable development  alongside providing humanitarian assistant to vulnerable populations.
           </p>
         </div>
         <div className="features-grid">
@@ -84,5 +84,6 @@ const Features = () => {
 };
 
 export default Features;
+
 
 

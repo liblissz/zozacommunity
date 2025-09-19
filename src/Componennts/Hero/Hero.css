@@ -1,7 +1,10 @@
 .hero {
   padding: 10rem 0 5rem;
   position: relative;
-  background: linear-gradient(135deg, #2d5b1a 0, #2d5b1a 100%);
+/*   background: linear-gradient(135deg, #2d5b1a 0, #2d5b1a 100%); */
+ background: url("../../assets/image.png"); 
+ 
+  
   color: #fff;
   overflow: hidden;
 }
@@ -79,4 +82,5 @@
     gap: 1rem;
   }
 }
+
 

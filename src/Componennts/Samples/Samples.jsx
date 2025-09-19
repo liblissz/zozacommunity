@@ -68,7 +68,7 @@ const Samples = () => {
       <section id="samples" className="samples">
         <div className="container">
           <div className="section-header">
-            <h2>Picture Post</h2>
+            <h2>ACTIVITIES CARRIED OUT</h2>
             <p>
               We post pictures of our project every day. We have posted{" "}
               {imagepost.length} posts so far
@@ -77,7 +77,7 @@ const Samples = () => {
 
           <div className="samples-grid">
             {loading && <BarLoader />}
-            {imagepost.map((item, index) => (
+            {imagepost.map.slice(0,3).((item, index) => (
               <div className="sample-card" key={index}>
                 <div className="sample-image">
                   <img src={item.ImageUrl} alt={item.title} />

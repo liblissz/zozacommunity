@@ -52,11 +52,11 @@ const UseCases = () => {
   return (
     <section id="use-cases" className="use-cases">
       <div className="container">
-        <div className="section-header">
+        {/* <div className="section-header">
           <h2> ZOZAC Community</h2>
           <p>ZOZAC is a non-profit, non-governmental organization committed to empowering individuals and strengthening communities across Africa. We promote peace,
              sustainable development, youth leadership, and humanitarian support — starting from the grassroots.</p>
-        </div>
+        </div> */}
 
         <div className="use-cases-tabs">
           {/* Navigation Tabs */}

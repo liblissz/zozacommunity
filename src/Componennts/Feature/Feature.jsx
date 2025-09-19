@@ -21,11 +21,11 @@ const features = [
     title: 'Entrepreneurial & Vocational Training',
     description: 'Providing practical skills in fashion, tech, and business to support self-reliance.',
   },
-  {
-    icon: <FaLaptopCode />,
-    title: 'ICT & Digital Skills Empowerment',
-    description: 'Equipping communities with skills in coding, CMS, and digital literacy.',
-  },
+  // {
+  //   icon: <FaLaptopCode />,
+  //   title: 'ICT & Digital Skills Empowerment',
+  //   description: 'Equipping communities with skills in coding, CMS, and digital literacy.',
+  // },
   // {
   //   icon: <FaCogs />,
   //   title: 'Software & Tech Services',

@@ -33,7 +33,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img12.jpg");
   }
   75% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img10.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img20.jpg");
   }
   100% {
     background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img1.jpg");
@@ -113,6 +113,7 @@
     gap: 1rem;
   }
 }
+
 
 
 

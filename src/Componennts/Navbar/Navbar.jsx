@@ -64,7 +64,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <img src="/logo1.jpg" alt="zozac logo" style={{height: "60px" width: "60px"}}/>
-          <span>ZOZAC COMMUNITY</span>
+{/*           <span>ZOZAC COMMUNITY</span> */}
         </div>
 
         <div className="nav-toggle" onClick={() => setMenuOpen(prev => !prev)}>
@@ -115,5 +115,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 

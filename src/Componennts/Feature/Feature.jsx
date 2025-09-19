@@ -36,11 +36,11 @@ const features = [
     title: 'Cybersecurity & Certification Programs',
     description: 'Training in cybersecurity with global standards like CompTIA certification.',
   },
-  {
-    icon: <FaPaintBrush />,
-    title: 'Graphic Design & Creative Services',
-    description: 'Designing impactful visuals and branding to help communities thrive.',
-  },
+  // {
+  //   icon: <FaPaintBrush />,
+  //   title: 'Graphic Design & Creative Services',
+  //   description: 'Designing impactful visuals and branding to help communities thrive.',
+  // },
   {
     icon: <FaHandsHelping />,
     title: 'Community Engagement & Peacebuilding',
@@ -84,6 +84,7 @@ At ZOZAC Community, we offer a range of impactful initiatives designed to train 
 };
 
 export default Features;
+
 
 
 

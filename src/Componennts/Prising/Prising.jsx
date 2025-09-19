@@ -109,7 +109,7 @@ const Pricing = () => {
        </center>
 <section style={sectionStyle}>
       <div>
-        <h2 style={headingStyle}>Our PDF Documents</h2>
+        <h2 style={headingStyle}>Our Reports</h2>
         <div style={gridStyle}>
           {pdfFiles.map((pdf, index) => (
             <div style={cardStyle} key={index}>

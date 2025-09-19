@@ -18,8 +18,8 @@ const features = [
   },
   {
     icon: <FaBriefcase />,
-    title: 'Entrepreneurial & Vocational Training',
-    description: 'Providing practical skills in fashion, tech, and business to support self-reliance.',
+    title: 'Humanitarian Supports',
+    description: 'Providing assistant for vulnerable youths and people living with disabilities for community development.',
   },
   // {
   //   icon: <FaLaptopCode />,
@@ -80,6 +80,7 @@ At ZOZAC Community, we offer a range of impactful initiatives designed to train 
 };
 
 export default Features;
+
 
 
 

@@ -64,7 +64,6 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <img src="/logo1.jpg" alt="zozac logo" style={{height: "60px" width: "60px"}}/>
-{/*           <i className="fas fa-brain"></i> */}
           <span>ZOZAC COMMUNITY</span>
         </div>
 
@@ -116,4 +115,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 

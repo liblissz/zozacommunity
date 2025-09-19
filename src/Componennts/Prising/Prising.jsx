@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Prising.css'
 import { Link } from 'react-router-dom';
+import img from "/img30"
 const plans = [
   {
     name: 'Community Support',
@@ -133,6 +134,11 @@ const Pricing = () => {
           ))}
         </div>
       </div>
+
+      <div>
+        <img src={img} style={{hieght: "100px", width: "100px"}} alt="food program" />
+
+        </div>
     </section>
        
         </div>

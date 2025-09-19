@@ -30,6 +30,19 @@ const About = () => {
 
 
               </div>
+                  <h2>
+Mission & Vision
+
+
+              </h2>
+              <div className="text">
+            Mission: Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
+                <br/>
+Vision: Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next generation.
+
+
+
+              </div>
               <ul className="grape">
                 <h1>What We Do
 </h1>
@@ -93,6 +106,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 

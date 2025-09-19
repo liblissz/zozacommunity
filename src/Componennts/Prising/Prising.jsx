@@ -100,10 +100,8 @@ const Pricing = () => {
     <section id="pricing" className="pricing">
       <div className="container">
         <div className="section-header">
-          <center>
-          <h2>NEWS_LETTER</h2>
-          </center>
-       <center>
+          <h2>NEWS LETTER</h2>
+       
 <section style={sectionStyle}>
       <div>
         <h2 style={headingStyle}>Our PDF Documents</h2>
@@ -132,7 +130,7 @@ const Pricing = () => {
         </div>
       </div>
     </section>
-       </center>
+       
         </div>
         <div className="pricing-toggle">
          

@@ -34,7 +34,7 @@ const features = [
   {
     icon: <FaShieldAlt />,
     title: 'Cybersecurity & Certification Programs',
-    description: 'Training in cybersecurity with global standards like CompTIA certification.',
+    description: 'carry every youth and people living with disabilities. Letting no one behind to promote community participation and development',
   },
   // {
   //   icon: <FaPaintBrush />,
@@ -43,7 +43,7 @@ const features = [
   // },
   {
     icon: <FaHandsHelping />,
-    title: 'Community Engagement & Peacebuilding',
+    title: 'Inclusiveness in diversity.',
     description: 'Promoting peace, unity, and civic awareness through outreach programs.',
   },
 ];
@@ -84,6 +84,7 @@ At ZOZAC Community, we offer a range of impactful initiatives designed to train 
 };
 
 export default Features;
+
 
 
 

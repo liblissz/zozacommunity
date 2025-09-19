@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: slideShow 8s infinite linear;
+  animation: slideShow 15s infinite linear;
   z-index: -1;
   /* dark overlay */
 /*   background-blend-mode: darken; */
@@ -131,6 +131,7 @@
     gap: 1rem;
   }
 }
+
 
 
 

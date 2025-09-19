@@ -55,6 +55,8 @@ const Pricing = () => {
         <div className="section-header">
           <h2>NEWS LETTER</h2>
        
+
+       
         </div>
         <div className="pricing-toggle">
          

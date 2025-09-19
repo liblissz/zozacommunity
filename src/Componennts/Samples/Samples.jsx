@@ -77,7 +77,7 @@ const Samples = () => {
 
           <div className="samples-grid">
             {loading && <BarLoader />}
-            {imagepost.map.slice(0,3).((item, index) => (
+            {imagepost.slice(0, 3).map((item, index) => (
               <div className="sample-card" key={index}>
                 <div className="sample-image">
                   <img src={item.ImageUrl} alt={item.title} />
@@ -170,4 +170,5 @@ const Samples = () => {
 };
 
 export default Samples;
+
 

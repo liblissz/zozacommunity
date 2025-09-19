@@ -53,9 +53,8 @@ const Pricing = () => {
     <section id="pricing" className="pricing">
       <div className="container">
         <div className="section-header">
-          <h2>Simplicity And Transparency.</h2>
-          <p>ZOZAC is an association training innovative leaders for a better tomorrow, promoting peace, providing
-             humanitarian assistance in grassroots communities and working on environmental preservation.</p>
+          <h2>NEWS LETTER</h2>
+       
         </div>
         <div className="pricing-toggle">
          

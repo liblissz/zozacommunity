@@ -53,6 +53,14 @@ const Features = () => {
     <section id="features" className="features">
       <div className="container">
         <div className="section-header">
+          <h2>About ZOZAC Community</h2>
+          <p>
+        We are a dynamic association dedicated to training innovative leaders for a brighter tomorrow. Our focus areas include promoting education, peace, and unity, youth employment, while providing humanitarian assistance to grassroots communities alongside environmental preservation.
+     Our association was founded by Afuh Alfred Ngum, who rose above adversity after being abandoned by his father at the age of 3. Witnessing the struggles of vulnerable youths, lack of education opportunities, access to employment, skills, so, he decided that, he will create a better future for others for the sake of community development starting with grassroots efforts, he eventually registered ZOZAC Community in 2022, ZOZAC, a word from his created language which means "Togetherness Is Strength."
+
+          </p>
+        </div>
+        <div className="section-header">
           <h2>Our Core Services</h2>
           <p>
             At ZOZAC Community, we offer a range of impactful services designed to train 
@@ -76,3 +84,4 @@ const Features = () => {
 };
 
 export default Features;
+

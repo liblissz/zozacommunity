@@ -70,7 +70,7 @@ const Samples = () => {
           <div className="section-header">
             <h2>ACTIVITIES 
               <br/>
-              <p>CARRIED OUT
+              <p style={{fontSize: "12px"}}>CARRIED OUT
                 </p>
               </h2>
             <p>

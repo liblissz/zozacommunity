@@ -144,7 +144,9 @@ const Pricing = () => {
               </div>
             </div>
 
-            {/* Right Side Image */}
+          </section>
+        </div>
+
             <div style={{  textAlign: "center" }}>
               <img
                 src={img}
@@ -152,9 +154,6 @@ const Pricing = () => {
                 alt="food program"
               />
             </div>
-          </section>
-        </div>
-
         {/* Pricing Plans */}
         <div className="pricing-grid">
           {plans.map((plan, index) => (

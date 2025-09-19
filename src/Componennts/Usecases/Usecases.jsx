@@ -6,23 +6,23 @@ import img3 from '../../assets/WhatsApp Image 2025-07-04 at 10.09.40_474fb199.jp
 
 // The data for all use cases
 const useCasesData = [
-  {
-    id: 'introduction',
-    title: 'What We Do',
-    description: `Education: Provide scholarships and promote quality education for kids and youths.
-Capacity Building: Organize conferences, seminars, and workshops to educate, transform, and empower.
-Programs for Peace and Unity: Host sports competitions like "Canini Nitata" to promote peace, unity, and community development, train what we call "Peace Guards" to be peace diplomats and advocates. 
-Skill Development: Offer training sessions to help youths develop their talents and skills.
-Environmental Conservation: Plant trees and promote eco-friendly environments.
-Humanitarian Works: Engage in volunteering, humanitarian works, and promote agriculture and culture.
-       At ZOZAC Community, we believe in the power of togetherness. Let's work together to create a better tomorrow for all.`,
-    points: [
-      'surviving comunities',
+//   {
+//     id: 'introduction',
+//     title: 'What We Do',
+//     description: `Education: Provide scholarships and promote quality education for kids and youths.
+// Capacity Building: Organize conferences, seminars, and workshops to educate, transform, and empower.
+// Programs for Peace and Unity: Host sports competitions like "Canini Nitata" to promote peace, unity, and community development, train what we call "Peace Guards" to be peace diplomats and advocates. 
+// Skill Development: Offer training sessions to help youths develop their talents and skills.
+// Environmental Conservation: Plant trees and promote eco-friendly environments.
+// Humanitarian Works: Engage in volunteering, humanitarian works, and promote agriculture and culture.
+//        At ZOZAC Community, we believe in the power of togetherness. Let's work together to create a better tomorrow for all.`,
+//     points: [
+//       'surviving comunities',
      
-    ],
-    imgSrc:img1,
-    imgAlt: 'ZOZAC',
-  },
+//     ],
+//     imgSrc:img1,
+//     imgAlt: 'ZOZAC',
+//   },
   {
     id: 'Our Mission',
     title: 'Our Mission',

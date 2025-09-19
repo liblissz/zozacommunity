@@ -68,15 +68,12 @@ const Samples = () => {
       <section id="samples" className="samples">
         <div className="container">
           <div className="section-header">
-            <h2>ACTIVITIES 
+            <h2 style={{fontSize: "39px"}}>ACTIVITIES 
               <br/>
-              <p style={{fontSize: "19px"}}>CARRIED OUT
+              <p style={{fontSize: "23px"}}>CARRIED OUT
                 </p>
               </h2>
-            <p>
-              We post pictures of our project every day. We have posted{" "}
-              {imagepost.length} posts so far
-            </p>
+        
           </div>
 
           <div className="samples-grid">

@@ -18,22 +18,38 @@ const About = () => {
                 Who We Are:<br /> We have been existing since  2012
               </h2>
               <div className="text">
-               ZOZAC – Zonal Organization for Zonal African Cooperation – is a pan-African platform 
-               founded with the vision of transforming African communities through sustainable development,
-                innovation, and unity. We focus on empowering local organizations and individuals across Africa 
-                to take ownership of their future by creating opportunities, building capacity, and fostering 
-                cross-border collaboration.
+                We are a dynamic association dedicated to training innovative leaders for a brighter tomorrow. Our focus areas 
+                include promoting education, peace, and unity, youth employment, while providing humanitarian assistance to
+                grassroots communities alongside environmental preservation.
+                Our association was founded by Afuh Alfred Ngum, who rose above adversity after being abandoned by his father 
+                at the age of 3. Witnessing the struggles of vulnerable youths, lack of education opportunities, access to 
+                employment, skills, so, he decided that, he will create a better future for others for the sake of community 
+                development starting with grassroots efforts, he eventually registered ZOZAC Community in 2022, ZOZAC, a word 
+                from his created language which means "Togetherness Is Strength."
 
 
               </div>
               <ul className="grape">
                 <h1>The Founder – Afuh Alfred Ngum</h1>
-                <li>Afuh Alfred Ngum is the founder and visionary leader of ZOZAC. With a deep belief in Pan-Africanism, youth empowerment, and zonal development, Mr. Afuh is committed to uniting
-                     African communities to solve their own problems and create a prosperous, self-sustaining future.</li>
-                <li>Mission: “Empower local African zones to lead their own transformation with unity, dignity, and innovation.”
-
+                <li>- Mission: Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
+- Vision: Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next generation.
 </li>
-                <li>Strategist and youth mentor in regional empowerment programs</li>
+                <li>- Empowering Youths: Encourage youths to utilize their skills and abilities for community development.
+</li>
+                               <li>- Programs for Peace and Unity: Host sports competitions like "Canini Nitata" to promote peace, unity, and community development, train what we call "Peace Guards" to be peace diplomats and advocates. 
+- Skill Development: Offer training sessions to help youths develop their talents and skills.
+- Environmental Conservation: Plant trees and promote eco-friendly environments.
+- Humanitarian Works: Engage in volunteering, humanitarian works, and promote agriculture and culture.
+</li>
+
+                               <li>- Education: Provide scholarships and promote quality education for kids and youths.
+- Capacity Building: Organize conferences, seminars, and workshops to educate, transform, and empower.
+</li>
+                
+                <li>- Innovation & Education: Support and develop innovative ideas while promoting quality education.
+- Collaboration: Unite organizations for community development, personal growth, and knowledge exchange.
+- Leadership Development: Foster integrity through leadership skills and personal development.
+</li>
               </ul>
               <div className="lemon">
                 <a href="tel: 674274276" className="pineapple">
@@ -75,3 +91,4 @@ const About = () => {
 };
 
 export default About;
+

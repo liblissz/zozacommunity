@@ -47,7 +47,54 @@ const plans = [
 
 const Pricing = () => {
   const [annual, _] = useState(false);
+ const pdfFiles = [
+    { title: "Quaterly NewsLetter", url: "/report.pdf" },
+    // { title: "Annual Budget", url: "/pdfs/annual-budget.pdf" },
+    // { title: "Project Proposal", url: "/pdfs/project-proposal.pdf" },
+  ];
 
+
+   const sectionStyle = {
+    padding: "4rem 2rem",
+    background: "#f9f9f9",
+  };
+
+  const headingStyle = {
+    textAlign: "center",
+    marginBottom: "2rem",
+    color: "#333",
+  };
+
+  const gridStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
+    gap: "2rem",
+  };
+
+  const cardStyle = {
+    background: "#fff",
+    borderRadius: "12px",
+    boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
+    padding: "1rem",
+    textAlign: "center",
+  };
+
+  const titleStyle = {
+    marginBottom: "1rem",
+    fontSize: "1.2rem",
+    color: "#444",
+  };
+
+  const buttonStyle = {
+    display: "inline-block",
+    marginTop: "1rem",
+    padding: "0.6rem 1.2rem",
+    background: "#2d5b1a",
+    color: "#fff",
+    borderRadius: "8px",
+    textDecoration: "none",
+    transition: "background 0.3s ease",
+  };
 
   return (
     <section id="pricing" className="pricing">
@@ -55,7 +102,34 @@ const Pricing = () => {
         <div className="section-header">
           <h2>NEWS LETTER</h2>
        
-
+<section style={sectionStyle}>
+      <div>
+        <h2 style={headingStyle}>Our PDF Documents</h2>
+        <div style={gridStyle}>
+          {pdfFiles.map((pdf, index) => (
+            <div style={cardStyle} key={index}>
+              <h3 style={titleStyle}>{pdf.title}</h3>
+              <embed
+                src={pdf.url}
+                type="application/pdf"
+                width="100%"
+                height="400px"
+                style={{ borderRadius: "8px" }}
+              />
+              <a
+                href={pdf.url}
+                download
+                style={buttonStyle}
+                onMouseOver={(e) => (e.target.style.background = "#1e3c10")}
+                onMouseOut={(e) => (e.target.style.background = "#2d5b1a")}
+              >
+                Download PDF
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
        
         </div>
         <div className="pricing-toggle">
@@ -106,3 +180,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+

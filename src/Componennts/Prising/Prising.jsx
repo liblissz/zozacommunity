@@ -62,7 +62,7 @@ const Pricing = () => {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    flexWrap: "wrap",
+    flexDirection: "column",
     padding: "2rem",
     gap: "2rem",
   };
@@ -144,9 +144,6 @@ const Pricing = () => {
               </div>
             </div>
 
-          </section>
-        </div>
-
             <div style={{  textAlign: "center" }}>
               <img
                 src={img}
@@ -154,6 +151,9 @@ const Pricing = () => {
                 alt="food program"
               />
             </div>
+          </section>
+        </div>
+
         {/* Pricing Plans */}
         <div className="pricing-grid">
           {plans.map((plan, index) => (

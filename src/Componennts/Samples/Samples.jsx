@@ -84,17 +84,21 @@ const Samples = () => {
                 </div>
                 <div className="sample-content">
                   <h3>{item.title}</h3>
-                  <p>
-                    {expandedPics[index]
-                      ? item.content
-                      : item.content.slice(0, 70)}
-                    <span
-                      style={{ cursor: "pointer", color: "blue" }}
-                      onClick={() => togglePic(index)}
-                    >
-                      {expandedPics[index] ? " ..show less" : " ..read more"}
-                    </span>
-                  </p>
+                 <p>
+  {expandedPics[index] || item.content.length <= 70
+    ? item.content
+    : item.content.slice(0, 70)}
+
+  {item.content.length > 70 && (
+    <span
+      style={{ cursor: "pointer", color: "#333" }}
+      onClick={() => togglePic(index)}
+    >
+      {expandedPics[index] ? " ..show less" : " ..read more"}
+    </span>
+  )}
+</p>
+
                   <Link to={`/picturepost/${item._id}`}>
                     <span className="btn-text">
                       Read More <i className="fas fa-arrow-right"></i>
@@ -135,17 +139,21 @@ const Samples = () => {
                 </div>
                 <div className="sample-content">
                   <h3>{item.title}</h3>
-                  <p>
-                    {expandedVideos[index]
-                      ? item.content
-                      : item.content.slice(0, 70)}
-                    <span
-                      style={{ cursor: "pointer", color: "blue" }}
-                      onClick={() => toggleVideo(index)}
-                    >
-                      {expandedVideos[index] ? " ..show less" : " ..read more"}
-                    </span>
-                  </p>
+                 <p>
+  {expandedVideos[index] || item.content.length <= 70
+    ? item.content
+    : item.content.slice(0, 70)}
+
+  {item.content.length > 70 && (
+    <span
+      style={{ cursor: "pointer", color: "#333" }}
+      onClick={() => toggleVideo(index)}
+    >
+      {expandedVideos[index] ? " ..show less" : " ..read more"}
+    </span>
+  )}
+</p>
+
                   <Link to={`/posts/${item._id}`}>
                     <span className="btn-text">
                       Read More <i className="fas fa-arrow-right"></i>
@@ -162,3 +170,4 @@ const Samples = () => {
 };
 
 export default Samples;
+

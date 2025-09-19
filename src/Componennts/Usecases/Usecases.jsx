@@ -53,7 +53,7 @@ const useCasesData = [
 
 const UseCases = () => {
   // The active tab (default is healthcare)
-  const [activeTab, setActiveTab] = useState('introduction');
+  const [activeTab, setActiveTab] = useState('Our Mission');
 
   return (
     <section id="use-cases" className="use-cases">

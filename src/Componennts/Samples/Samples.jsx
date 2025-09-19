@@ -68,7 +68,11 @@ const Samples = () => {
       <section id="samples" className="samples">
         <div className="container">
           <div className="section-header">
-            <h2>ACTIVITIES CARRIED OUT</h2>
+            <h2>ACTIVITIES 
+              <br/>
+              <p>CARRIED OUT
+                </p>
+              </h2>
             <p>
               We post pictures of our project every day. We have posted{" "}
               {imagepost.length} posts so far

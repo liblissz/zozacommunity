@@ -121,7 +121,7 @@ const Samples = () => {
 
           <div className="samples-grid">
             {loading && <BarLoader />}
-            {videopost.map((item, index) => (
+            {videopost.slice(0, 3).map((item, index) => (
               <div className="sample-card" key={index}>
                 <div>
                   <video

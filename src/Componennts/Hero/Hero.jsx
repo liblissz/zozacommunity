@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import heroimage from '../../assets/image.png'
+import heroimage from '/logo1.jpg'
 
 import './Hero.css'
 import Donate from '../../Pages/Donation/Donate';
@@ -50,3 +50,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

@@ -2,138 +2,161 @@ import React, { useEffect, useState } from 'react';
 import './Sample.css'
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { BarLoader, ClipLoader } from 'react-spinners';
+import { BarLoader } from 'react-spinners';
 import { Link } from 'react-router-dom';
 
-
 const Samples = () => {
-    // Increment count on button click or page load — here's example for page load:
   useEffect(() => {
     const incrementCount = async () => {
       try {
-        const res = await axios.post('https://zozacbackend.onrender.com/api/pageview');
-        
+        await axios.post('https://zozacbackend.onrender.com/api/pageview');
       } catch (error) {
         console.error('Failed to increment page views', error);
       }
     };
-
     incrementCount();
   }, []);
 
-const [imagepost, setimagepost] = useState([])
-const [videopost, setvideopost] = useState([])
-const [loading, setloading] = useState(true)
-useEffect(()=>{
-  const fetchpictures = async ()=>{
-  try {
-    setloading(true)
-     
-    const allpictures = await axios.get("https://zozacbackend.onrender.com/admin/picture/post")
-    setimagepost(allpictures.data)
-   
-  } catch (error) {
-    toast.error(error)
-  }finally{
-    setloading(false)
-  }
+  const [imagepost, setimagepost] = useState([]);
+  const [videopost, setvideopost] = useState([]);
+  const [loading, setloading] = useState(true);
+
+  // track which picture/video is expanded
+  const [expandedPics, setExpandedPics] = useState({});
+  const [expandedVideos, setExpandedVideos] = useState({});
+
+  const togglePic = (index) => {
+    setExpandedPics((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
+  const toggleVideo = (index) => {
+    setExpandedVideos((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
+  useEffect(() => {
+    const fetchpictures = async () => {
+      try {
+        setloading(true);
+        const allpictures = await axios.get("https://zozacbackend.onrender.com/admin/picture/post");
+        setimagepost(allpictures.data);
+      } catch (error) {
+        toast.error(error.message);
+      } finally {
+        setloading(false);
       }
-       const fetchvideo = async ()=>{
-  try {
-    setloading(true)
-     
-    const allvideos = await axios.get("https://zozacbackend.onrender.com/admin/video/post")
-    setvideopost(allvideos.data)
-  
-  } catch (error) {
-    toast.error(error)
-  }finally{
-    setloading(false)
-  }
+    };
+
+    const fetchvideo = async () => {
+      try {
+        setloading(true);
+        const allvideos = await axios.get("https://zozacbackend.onrender.com/admin/video/post");
+        setvideopost(allvideos.data);
+      } catch (error) {
+        toast.error(error.message);
+      } finally {
+        setloading(false);
       }
-      fetchvideo()
-fetchpictures()
+    };
 
-
-},[])
-
+    fetchvideo();
+    fetchpictures();
+  }, []);
 
   return (
     <>
-    
-    <section id="samples" className="samples">
-      <div className="container">
-        <div className="section-header">
-          <h2>Picture Post</h2>
-          <p>We post pictures of our project every day. we have posted {imagepost.length} posts so far</p>
-        </div>
+      {/* Picture Post */}
+      <section id="samples" className="samples">
+        <div className="container">
+          <div className="section-header">
+            <h2>Picture Post</h2>
+            <p>
+              We post pictures of our project every day. We have posted{" "}
+              {imagepost.length} posts so far
+            </p>
+          </div>
 
-        <div className="samples-grid">
-          {loading && <BarLoader/>}
-          {imagepost.map((item, index) => (
-            <div className="sample-card" key={index}>
-              <div className="sample-image">
-                <img src={item.ImageUrl} alt={item.title} />
+          <div className="samples-grid">
+            {loading && <BarLoader />}
+            {imagepost.map((item, index) => (
+              <div className="sample-card" key={index}>
+                <div className="sample-image">
+                  <img src={item.ImageUrl} alt={item.title} />
+                </div>
+                <div className="sample-content">
+                  <h3>{item.title}</h3>
+                  <p>
+                    {expandedPics[index]
+                      ? item.content
+                      : item.content.slice(0, 70)}
+                    <span
+                      style={{ cursor: "pointer", color: "blue" }}
+                      onClick={() => togglePic(index)}
+                    >
+                      {expandedPics[index] ? " ..show less" : " ..read more"}
+                    </span>
+                  </p>
+                  <Link to={`/picturepost/${item._id}`}>
+                    <span className="btn-text">
+                      Read More <i className="fas fa-arrow-right"></i>
+                    </span>
+                  </Link>
+                </div>
               </div>
-              <div className="sample-content">
-                <h3>{item.title}</h3>
-                <p>{item.content}</p>
-                <Link to={`/picturepost/${item._id}`}>
-                <a  className="btn-text">
-                  Read More <i className="fas fa-arrow-right"></i>
-                </a>
-                </Link>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      {/* Video Post */}
+      <section id="samples" className="samples">
+        <div className="container">
+          <div className="section-header">
+            <h2>Video Post</h2>
+            <p>We post videos of our works on a daily</p>
+          </div>
 
-
-
-    <section id="samples" className="samples">
-      <div className="container">
-        <div className="section-header">
-          <h2>Video post</h2>
-          <p>We post videos of our works on a daily</p>
-        </div>
-
-        <div className="samples-grid">
-              {loading && <BarLoader/>}
-          {videopost.map((item, index) => (
-            <div className="sample-card" key={index}>
-              <div className="">
-<video
-  src={item.VidUrl}
-  controls
-  preload="metadata"
-  style={{
-    width: '100%',
-    borderRadius: '10px',
-    backgroundColor: '#000 ',
-    outline: 'none',
-  }}
-  onContextMenu={(e) => e.preventDefault()} // disables right-click menu
-></video>
-
-
+          <div className="samples-grid">
+            {loading && <BarLoader />}
+            {videopost.map((item, index) => (
+              <div className="sample-card" key={index}>
+                <div>
+                  <video
+                    src={item.VidUrl}
+                    controls
+                    preload="metadata"
+                    style={{
+                      width: "100%",
+                      borderRadius: "10px",
+                      backgroundColor: "#000",
+                      outline: "none",
+                    }}
+                    onContextMenu={(e) => e.preventDefault()}
+                  ></video>
+                </div>
+                <div className="sample-content">
+                  <h3>{item.title}</h3>
+                  <p>
+                    {expandedVideos[index]
+                      ? item.content
+                      : item.content.slice(0, 70)}
+                    <span
+                      style={{ cursor: "pointer", color: "blue" }}
+                      onClick={() => toggleVideo(index)}
+                    >
+                      {expandedVideos[index] ? " ..show less" : " ..read more"}
+                    </span>
+                  </p>
+                  <Link to={`/posts/${item._id}`}>
+                    <span className="btn-text">
+                      Read More <i className="fas fa-arrow-right"></i>
+                    </span>
+                  </Link>
+                </div>
               </div>
-              <div className="sample-content">
-                <h3>{item.title}</h3>
-                <p>{item.content}</p>
-                <Link to={`/posts/${item._id}`}>
-                <a  className="btn-text">
-                 Read More <i className="fas fa-arrow-right"></i>
-                </a>
-                </Link>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };

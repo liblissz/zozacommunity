@@ -2,7 +2,7 @@
   padding: 10rem 0 5rem;
   position: relative;
   color: #fff;
-  height: 100vh !important;
+  height: 150vh !important;
   overflow: hidden;
   transition:all 0.3s linear;
 }
@@ -113,6 +113,7 @@
     gap: 1rem;
   }
 }
+
 
 
 

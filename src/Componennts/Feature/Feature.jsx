@@ -40,7 +40,7 @@ const features = [
   {
     icon: <FaHandsHelping />,
     title: 'Inclusiveness in diversity.',
-    description: 'Promoting peace, unity, and civic awareness through outreach programs.',
+    description: 'Promoting peace, unity, social cohesion, and civic awareness through activities & programs.',
   },
 ];
 

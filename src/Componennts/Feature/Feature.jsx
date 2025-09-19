@@ -26,11 +26,11 @@ const features = [
     title: 'ICT & Digital Skills Empowerment',
     description: 'Equipping communities with skills in coding, CMS, and digital literacy.',
   },
-  {
-    icon: <FaCogs />,
-    title: 'Software & Tech Services',
-    description: 'Custom software solutions including websites, desktop, and mobile applications.',
-  },
+  // {
+  //   icon: <FaCogs />,
+  //   title: 'Software & Tech Services',
+  //   description: 'Custom software solutions including websites, desktop, and mobile applications.',
+  // },
   {
     icon: <FaShieldAlt />,
     title: 'Cybersecurity & Certification Programs',
@@ -84,6 +84,7 @@ At ZOZAC Community, we offer a range of impactful initiatives designed to train 
 };
 
 export default Features;
+
 
 
 

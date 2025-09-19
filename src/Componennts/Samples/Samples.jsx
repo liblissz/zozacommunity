@@ -68,14 +68,15 @@ const Samples = () => {
       <section id="samples" className="samples">
         <div className="container">
           <div className="section-header">
-            <h2 style={{fontSize: "29px"}}>ACTIVITIES 
+                   <center>
+            <h2 style={{fontSize: "24px"}}>ACTIVITIES 
               <br/>
-              <center>
+       
    <p style={{fontSize: "23px"}}>CARRIED OUT
                 </p>
-              </center>
            
               </h2>
+               </center>
         
           </div>
 

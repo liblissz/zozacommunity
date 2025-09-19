@@ -31,11 +31,7 @@ const features = [
   //   title: 'Software & Tech Services',
   //   description: 'Custom software solutions including websites, desktop, and mobile applications.',
   // },
-  {
-    icon: <FaShieldAlt />,
-    title: 'Cybersecurity & Certification Programs',
-    description: 'carry every youth and people living with disabilities. Letting no one behind to promote community participation and development',
-  },
+
   // {
   //   icon: <FaPaintBrush />,
   //   title: 'Graphic Design & Creative Services',

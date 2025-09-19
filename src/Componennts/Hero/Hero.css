@@ -23,19 +23,19 @@
 /* Keyframes for slideshow */
 @keyframes slideShow {
   0% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("img1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img9.jpg");
   }
   25% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("img2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img8.jpg");
   }
   50% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("img3.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img12.jpg");
   }
   75% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("img4.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img10.jpg");
   }
   100% {
-    background-image: linear-gradient(rgba(0,0,0,0.5)), url("img1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("/img1.jpg");
   }
 }
 
@@ -112,6 +112,7 @@
     gap: 1rem;
   }
 }
+
 
 
 

@@ -95,9 +95,9 @@ const UseCases = () => {
                         <li key={index}>{point}</li>
                       ))}
                     </ul>
-                    <a href="#" className="btn-secondary">
+                    {/* <a href="#" className="btn-secondary">
                       Click on next tab <i className="fas fa-arrow-right"></i>
-                    </a>
+                    </a> */}
                   </div>
                   <div className="tab-image">
                     <img src={useCase.imgSrc} alt={useCase.imgAlt} />

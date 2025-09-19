@@ -145,7 +145,7 @@ const Pricing = () => {
             </div>
 
             {/* Right Side Image */}
-            <div style={{ flex: "0 0 300px", textAlign: "center" }}>
+            <div style={{  textAlign: "center" }}>
               <img
                 src={img}
                 style={{ height: "200px", width: "200px", borderRadius: "10px" }}

@@ -5,6 +5,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import logo from "/logo1.jpg"
 
 const Navbar = () => {
   const token = localStorage.getItem('user-token');
@@ -63,8 +64,8 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="logo">
-          <img src="/logo1.jpg" alt="zozac logo" style={{height: "60px" width: "60px"}}/>
-{/*           <span>ZOZAC COMMUNITY</span> */}
+          <img src={logo}  alt="zozac logo" style={{height: "60px" width: "60px"}}/>
+          <span>ZOZAC COMMUNITY</span>
         </div>
 
         <div className="nav-toggle" onClick={() => setMenuOpen(prev => !prev)}>
@@ -115,6 +116,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 

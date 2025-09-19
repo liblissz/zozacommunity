@@ -31,7 +31,8 @@ const About = () => {
 
               </div>
               <ul className="grape">
-                <h1>The Founder – Afuh Alfred Ngum</h1>
+                <h1>What We Do
+</h1>
                 <li>- Mission: Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
 - Vision: Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next generation.
 </li>
@@ -92,5 +93,6 @@ const About = () => {
 };
 
 export default About;
+
 
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Prising.css";
 import { Link } from "react-router-dom";
-import img from "/img30.png"; // ✅ make sure extension is correct
+import img from "/img30.jpg"; // ✅ make sure extension is correct
 
 const plans = [
   {
@@ -195,3 +195,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+

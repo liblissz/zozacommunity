@@ -15,7 +15,8 @@ const About = () => {
             <div className="orange">
               <span className="mango"> About ZOZAC</span>
               <h2>
-                Who We Are:<br /> We have been existing since  2012
+           About ZOZAC Community
+
               </h2>
               <div className="text">
                 We are a dynamic association dedicated to training innovative leaders for a brighter tomorrow. Our focus areas 
@@ -91,4 +92,5 @@ const About = () => {
 };
 
 export default About;
+
 

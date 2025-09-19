@@ -8,8 +8,14 @@ import img3 from '../../assets/WhatsApp Image 2025-07-04 at 10.09.40_474fb199.jp
 const useCasesData = [
   {
     id: 'introduction',
-    title: 'Who We Are',
-    description: `Founded in ORACLE BLISSZ, ZOZAC Community (Zonal Organization for Zenith African Communities) is a Pan-African organization dedicated to empowering grassroots communities through leadership training, sustainable development, peace promotion, and humanitarian aid.`,
+    title: 'What We Do',
+    description: `Education: Provide scholarships and promote quality education for kids and youths.
+Capacity Building: Organize conferences, seminars, and workshops to educate, transform, and empower.
+Programs for Peace and Unity: Host sports competitions like "Canini Nitata" to promote peace, unity, and community development, train what we call "Peace Guards" to be peace diplomats and advocates. 
+Skill Development: Offer training sessions to help youths develop their talents and skills.
+Environmental Conservation: Plant trees and promote eco-friendly environments.
+Humanitarian Works: Engage in volunteering, humanitarian works, and promote agriculture and culture.
+       At ZOZAC Community, we believe in the power of togetherness. Let's work together to create a better tomorrow for all.`,
     points: [
       'surviving comunities',
      

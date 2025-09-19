@@ -99,6 +99,8 @@ const Samples = () => {
   )}
 </p>
 
+<span className="btn-text">watch check on youtube  <i className="fas fa-arrow-right"></i></span>
+
                   <Link to={`/picturepost/${item._id}`}>
                     <span className="btn-text">
                       Read More <i className="fas fa-arrow-right"></i>

@@ -281,7 +281,7 @@ const Pricing = () => {
               <img
                 src={selectedPerson.picture}
                 alt={selectedPerson.name}
-                style={{ ...imgStyle, height: "250px" }}
+                style={{ ...imgStyle, height: "400px" }}
               />
               <h2>{selectedPerson.name}</h2>
               <p style={{ color: "#777" }}>{selectedPerson.position}</p>

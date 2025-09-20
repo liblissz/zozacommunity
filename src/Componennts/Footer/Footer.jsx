@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Footer.css'
 import { Link } from 'react-router-dom';
+import { WhatsappShareButton, WhatsappIcon } from "react-share";
 const Footer = () => {
+   const shareUrl = "https://zozacommunity.vercel.app"; // change to your link
+  const shareText = "Chat with us on WhatsApp!";
+  
   const [loagout, removelogout] = useState(false)
 
   const handlelogout = ()=>{
@@ -77,10 +81,38 @@ useEffect(() => {
           
         </div>
       </div>
+
+
+       <div
+      style={{
+        position: "fixed",
+        bottom: "20px",
+        right: "20px",
+        zIndex: 9999,
+      }}
+    >
+      <WhatsappShareButton
+        url={shareUrl}
+        title={shareText}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "linear-gradient(135deg, #25D366, #128C7E)",
+          borderRadius: "50%",
+          width: "60px",
+          height: "60px",
+          boxShadow: "0 4px 15px rgba(0,0,0,0.3)",
+        }}
+      >
+        <WhatsappIcon size={32} round />
+      </WhatsappShareButton>
+    </div>
     </footer>
   );
 };
 
 export default Footer;
+
 
 

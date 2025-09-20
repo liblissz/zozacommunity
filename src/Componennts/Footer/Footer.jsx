@@ -29,9 +29,9 @@ const Footer = () => {
                <img
             src={logo}
             alt="zozac logo"
-            style={{ height: "60px", width: "60px" }}
+            style={{ height: "60px", width: "60px",padding: "16px"  }}
           />
-              <span>ZOZAC</span>
+              <span style={{padding: "16px"}}>ZOZAC Community</span>
             </div>
             <p>
               Creating Platforms for Dialogue, Unity, Collaboration, Youths Empowerment & Sustainable Skills for Community Development.
@@ -133,5 +133,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 

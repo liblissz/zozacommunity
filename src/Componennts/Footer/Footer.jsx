@@ -54,7 +54,7 @@ useEffect(() => {
             <h4>contact us</h4>
             <ul>
               <li><a href="zozaccommunity@gmail.com">zozaccommunity@gmail.com</a></li>
-              <li><a href="tel: 674274276">674274276</a></li>
+              <li><a href="tel: 674274276">+237 674274276</a></li>
               <li><a href="#">Location: Likomba-Tiko SW Region Cameroon</a></li>
              {loagout && <li><a > <button onClick={handlelogout} className="btn-primary">logout</button></a></li>}
             </ul>
@@ -82,3 +82,4 @@ useEffect(() => {
 };
 
 export default Footer;
+

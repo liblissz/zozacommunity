@@ -48,14 +48,35 @@ const plans = [
   },
 ];
 
+// 👤 People data for Bio Section
+const people = [
+  {
+    name: "Lee Bliss",
+    position: "Software Engineer",
+    picture: "/profile1.jpg",
+    bio: "Lee Bliss is a passionate software engineer with experience in web and app development. He specializes in creating innovative solutions for real-world problems.",
+  },
+  {
+    name: "Jane Doe",
+    position: "Project Manager",
+    picture: "/profile2.jpg",
+    bio: "Jane is a highly skilled project manager with a proven record in leading teams to success. She is committed to delivering results while fostering collaboration.",
+  },
+  {
+    name: "John Smith",
+    position: "UX Designer",
+    picture: "/profile3.jpg",
+    bio: "John is a creative UX designer who focuses on creating intuitive and user-friendly designs that enhance user experiences across digital platforms.",
+  },
+];
+
 const Pricing = () => {
   const [annual, _] = useState(false);
+  const [selectedPerson, setSelectedPerson] = useState(null);
 
-  const pdfFiles = [
-    { title: "Quarterly Newsletter", url: "/report.pdf" },
-  ];
+  const pdfFiles = [{ title: "Quarterly Newsletter", url: "/report.pdf" }];
 
-  // Inline styles
+  // Newsletter Styles
   const sectionStyle = {
     background: "#f9f9f9",
     width: "100%",
@@ -104,6 +125,66 @@ const Pricing = () => {
     transition: "background 0.3s ease",
   };
 
+  // Bio Styles
+  const bioGridStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+    gap: "1.5rem",
+    marginTop: "3rem",
+  };
+
+  const bioCardStyle = {
+    background: "#fff",
+    borderRadius: "12px",
+    boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
+    padding: "1rem",
+    textAlign: "center",
+    cursor: "pointer",
+    transition: "transform 0.3s ease",
+  };
+
+  const imgStyle = {
+    width: "100%",
+    height: "200px",
+    objectFit: "cover",
+    borderRadius: "10px",
+    marginBottom: "1rem",
+  };
+
+  const modalOverlayStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: "rgba(0,0,0,0.6)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 1000,
+  };
+
+  const modalContentStyle = {
+    background: "#fff",
+    borderRadius: "12px",
+    padding: "2rem",
+    maxWidth: "600px",
+    width: "90%",
+    textAlign: "center",
+    position: "relative",
+    animation: "fadeIn 0.3s ease", // Animation
+  };
+
+  const closeButtonStyle = {
+    position: "absolute",
+    top: "10px",
+    right: "15px",
+    background: "transparent",
+    border: "none",
+    fontSize: "1.5rem",
+    cursor: "pointer",
+  };
+
   return (
     <section id="pricing" className="pricing">
       <div className="container">
@@ -144,10 +225,10 @@ const Pricing = () => {
               </div>
             </div>
 
-            <div style={{  textAlign: "center" }}>
+            <div style={{ textAlign: "center" }}>
               <img
                 src={img}
-                className ="increasesize"
+                className="increasesize"
                 style={{ height: "300px", borderRadius: "10px" }}
                 alt="food program"
               />
@@ -155,45 +236,66 @@ const Pricing = () => {
           </section>
         </div>
 
+        {/* 👤 Bio Section */}
+        <div style={{ marginTop: "4rem" }}>
+          <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+            Meet Our Team
+          </h2>
+          <div style={bioGridStyle}>
+            {people.map((person, index) => (
+              <div
+                key={index}
+                style={bioCardStyle}
+                onMouseOver={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.03)")
+                }
+                onMouseOut={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
+                }
+              >
+                <img src={person.picture} alt={person.name} style={imgStyle} />
+                <h3>{person.name}</h3>
+                <p style={{ color: "#777" }}>{person.position}</p>
+                <button
+                  style={buttonStyle}
+                  onClick={() => setSelectedPerson(person)}
+                >
+                  View Bio
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
 
-        {/* Pricing Plans
-        <div className="pricing-grid">
-          {plans.map((plan, index) => (
+        {/* Modal Popup */}
+        {selectedPerson && (
+          <div style={modalOverlayStyle} onClick={() => setSelectedPerson(null)}>
             <div
-              key={index}
-              className={`pricing-card ${plan.popular ? "popular" : ""}`}
+              style={modalContentStyle}
+              onClick={(e) => e.stopPropagation()}
             >
-              {plan.popular && <div className="popular-badge">Most Popular</div>}
-              <div className="pricing-header">
-                <h3>{plan.name}</h3>
-                <p>{plan.description}</p>
-              </div>
-              <div className="pricing-features">
-                <ul>
-                  {plan.features.map(({ label, included }, idx) => (
-                    <li key={idx} className={included ? "" : "disabled"}>
-                      <i
-                        className={`fas fa-${included ? "check" : "times"}`}
-                      ></i>{" "}
-                      {label}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <Link to={"/order"}>
-                <div className="pricing-footer">
-                  <a href="#" className={plan.buttonClass}>
-                    {plan.buttonText}
-                  </a>
-                </div>
-              </Link>
+              <button
+                style={closeButtonStyle}
+                onClick={() => setSelectedPerson(null)}
+              >
+                &times;
+              </button>
+              <img
+                src={selectedPerson.picture}
+                alt={selectedPerson.name}
+                style={{ ...imgStyle, height: "250px" }}
+              />
+              <h2>{selectedPerson.name}</h2>
+              <p style={{ color: "#777" }}>{selectedPerson.position}</p>
+              <p style={{ marginTop: "1rem", color: "#444" }}>
+                {selectedPerson.bio}
+              </p>
             </div>
-          ))}
-        </div> */}
+          </div>
+        )}
       </div>
     </section>
   );
 };
 
 export default Pricing;
-

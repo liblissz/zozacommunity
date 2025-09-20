@@ -3,14 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "postbuild": "echo '/* /index.html 200' > dist/_redirects",
-    "preview": "vite preview",
-    "start": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "postbuild": "echo '/* /index.html 200' > dist/_redirects",
+  "preview": "vite preview --port $PORT --host",
+  "start": "vite preview --port $PORT --host"
+}
+
   "dependencies": {
     "axios": "^1.10.0",
     "react": "^19.0.0",

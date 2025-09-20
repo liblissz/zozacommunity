@@ -84,7 +84,6 @@ const Pricing = () => {
   const imgStyle = {
     width: "100%",
     height: "400px",
-    maxHeight: "220px",
     objectFit: "cover",
     borderRadius: "10px",
     marginBottom: "1rem",

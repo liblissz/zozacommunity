@@ -55,7 +55,7 @@ const Order = () => {
           </h1>
 
           <form onSubmit={handleSubmit} className="juliet">
-            <h1 className="ken">Place Your Order</h1>
+            <h1 className="ken">Join Us</h1>
 
             <fieldset className="victor">
               <legend><span className="number">1</span> Enter Your Details</legend>

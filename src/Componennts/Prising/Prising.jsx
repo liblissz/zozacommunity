@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Prising.css";
 import { Link } from "react-router-dom";
 import img from "/img30.jpg"; // ✅ make sure extension is correct
@@ -7,12 +7,12 @@ const plans = [/* unchanged */];
 
 // 👤 People data for Bio Section
 const people = [
-
   {
     name: "Mr. Afuh Alfred Ngum",
     position: "Executive Director",
     picture: "/profile1.jpg",
     bio: `Mr. Afuh Alfred Ngum is a dedicated Peace advocate, youth empowerment leader, community builder, and humanitarian with over 8 years of experience in Cameroon and parts of Africa. Experienced in working in conflict-affected and grassroots communities fostering peace, promoting development, countering youth vulnerability and violent extremism. Received leadership award in recognition of dedication to peace building and community development in Cameroon and Africa. Trained and certified as a Peace Advocate Expert by the Peace Academy, as a Humanitarian Peacekeeping General by GAICAM International, and as a Peaceweaver by Civic Watch.
+
 WORK EXPERIENCE
 FOUNDER/EXECUTIVE DIRECTOR ZOZAC COMMUNITY (ZOZAC) | Jan 2020 – Present
 Initiate programs and projects aimed at building the capacity of youths and local organizations in Cameroon and Africa.
@@ -20,50 +20,56 @@ Runs an international program launched in Uganda East Africa that built capaciti
 Coordinate day-to-day functioning of the organization, supervising 6 staff.
 Partnered with Interfaith Vision Cameroon in 2021 to advocate for a health center in Mboma, Limbe.
 Led a team from 8+ countries to Uganda for the official launch of ACFLO and ACDGs.
- Established database of 500+ contacts including government departments, international agencies, youth organizations.
+Established database of 500+ contacts including government departments, international agencies, youth organizations.
+
 GLOBAL PRESIDENT OF AFRICAN CONGRESS FOR LOCAL ORGANIZATIONS (ACFLO) | June 2020 – Present
 Mobilized and empowered youths through trainings and outreach activities in Cameroon, Nigeria, and Uganda.
 Trained 100+ youth leaders on involvement in development, unity, and peace.
 Provided consultancy to youth organizations and leaders for program implementation.
 Strengthened relationships between local organizations for development and peace.
+
 FOUNDER/EXECUTIVE DIRECTOR ZOZAC INSTITUTE | Jan 2023 – Present
 Championing the vision, mission, and goals of the institute.
 Developed engaging lesson plans in peace building, community development, youth empowerment, and countering extremism.
 Recruiting and mentoring trainers.
 Compiling and analyzing data on student progress.
 Creating collaborative and positive learning environments.
+
 TIKO YOUTHS NETWORK | Nov 2023 – Apr 2025
 Researched and supported programming on advocacy, youth empowerment, and peace.
 Conducted needs and impact assessments.
 Consulted with organizations and stakeholders on youth and community development.
+
 CONSULTANT | Blissz Concept Group LTD | Feb 2025 – Present
 Mapped affected communities and vulnerable youths in SW Cameroon to identify needs and support areas.
+
 CAMEROON REPRESENTATIVE | One World Nexus, New York USA | 2023 – 2025
 
 TRAINER | Global Elite’s Mindset for Excellence Nigeria | 2024
 Trained youth leaders on community development and creating thriving ecosystems.
+
 PEACE BUILDING AND PEACE GUARDS | ZOZAC COMMUNITY PEACE PROGRAM | 2025 – Present
 Promoting peace and unity in Cameroon.
+
 STATE DELEGATE | ACFLO Summit Uganda | Jul 2018
 Represented Cameroonian youths to discuss growth of local organizations and youth issues.
+
 GUEST SPEAKER AT
-Noblemen Book lunching  november 2023
-African Congress For Local Organization (ACFLO) in Uganda    October to November  2024
-Hear My Cry Submit     july  2025
+- Noblemen Book lunching  November 2023
+- African Congress For Local Organization (ACFLO) in Uganda October–November 2024
+- Hear My Cry Summit July 2025
+
 AWARDS & RECOGNITION
- Grassroots Community Award of the Year 2023 – National Council of NGOs, Cameroon
- Young Youth Achiever of the Year 2024 – KeyPoint Awards
- Community Leadership & Youth Empowerment Award 2025 – Community Impact Awards, EEFEG Yaounde`,
+- Grassroots Community Award of the Year 2023 – National Council of NGOs, Cameroon
+- Young Youth Achiever of the Year 2024 – KeyPoint Awards
+- Community Leadership & Youth Empowerment Award 2025 – Community Impact Awards, EEFEG Yaounde`,
   },
-
-
-    {
+  {
     name: "Lee Bliss",
     position: "Software Engineer",
     picture: "/profile1.jpg",
     bio: "Lee Bliss is a passionate software engineer with experience in web and app development. He specializes in creating innovative solutions for real-world problems.",
   },
-
 ];
 
 const Pricing = () => {
@@ -118,6 +124,8 @@ const Pricing = () => {
     color: "#fff",
     borderRadius: "8px",
     textDecoration: "none",
+    border: "none",
+    cursor: "pointer",
     transition: "background 0.3s ease",
   };
 
@@ -141,7 +149,8 @@ const Pricing = () => {
 
   const imgStyle = {
     width: "100%",
-    height: "220px",
+    height: "auto",
+    maxHeight: "220px",
     objectFit: "cover",
     borderRadius: "10px",
     marginBottom: "1rem",
@@ -167,10 +176,11 @@ const Pricing = () => {
     padding: "2rem",
     maxWidth: "650px",
     width: "100%",
-    maxHeight: "80vh", // 🔥 limit modal height
-    overflowY: "auto", // 🔥 scroll for long bios
+    maxHeight: "80vh",
+    overflowY: "auto",
     textAlign: "center",
     position: "relative",
+    animation: "fadeIn 0.3s ease-in-out",
   };
 
   const closeButtonStyle = {
@@ -183,8 +193,26 @@ const Pricing = () => {
     cursor: "pointer",
   };
 
+  // 🔑 ESC key to close modal
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") setSelectedPerson(null);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
+  // 🔑 Animation keyframes
+  const fadeInKeyframes = `
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  `;
+
   return (
     <section id="pricing" className="pricing">
+      <style>{fadeInKeyframes}</style>
       <div className="container">
         {/* Newsletter Section */}
         <div className="section-header">
@@ -227,7 +255,7 @@ const Pricing = () => {
               <img
                 src={img}
                 className="increasesize"
-                style={{ height: "300px", borderRadius: "10px" }}
+                style={{ height: "300px", borderRadius: "10px", maxWidth: "100%" }}
                 alt="food program"
               />
             </div>
@@ -251,12 +279,22 @@ const Pricing = () => {
                   (e.currentTarget.style.transform = "scale(1)")
                 }
               >
-                <img src={person.picture} alt={person.name} style={imgStyle} />
+                <img
+                  src={person.picture}
+                  alt={`${person.name} profile`}
+                  style={imgStyle}
+                />
                 <h3>{person.name}</h3>
                 <p style={{ color: "#777" }}>{person.position}</p>
                 <button
                   style={buttonStyle}
                   onClick={() => setSelectedPerson(person)}
+                  onMouseOver={(e) =>
+                    (e.target.style.background = "#1e3c10")
+                  }
+                  onMouseOut={(e) =>
+                    (e.target.style.background = "#2d5b1a")
+                  }
                 >
                   View Bio
                 </button>
@@ -275,17 +313,26 @@ const Pricing = () => {
               <button
                 style={closeButtonStyle}
                 onClick={() => setSelectedPerson(null)}
+                aria-label="Close bio popup"
               >
                 &times;
               </button>
               <img
                 src={selectedPerson.picture}
-                alt={selectedPerson.name}
-                style={{ ...imgStyle, height: "400px" }}
+                alt={`${selectedPerson.name} profile large`}
+                style={{ ...imgStyle, maxHeight: "400px" }}
               />
               <h2>{selectedPerson.name}</h2>
               <p style={{ color: "#777" }}>{selectedPerson.position}</p>
-              <p style={{ marginTop: "1rem", color: "#444", lineHeight: "1.6" }}>
+              <p
+                style={{
+                  marginTop: "1rem",
+                  color: "#444",
+                  lineHeight: "1.6",
+                  whiteSpace: "pre-line", // ✅ keeps long bio readable
+                  textAlign: "justify",
+                }}
+              >
                 {selectedPerson.bio}
               </p>
             </div>

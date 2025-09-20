@@ -58,6 +58,7 @@ const VideoHero = () => {
         padding: "60px 20px",
         display: "flex",
         justifyContent: "center",
+        marginTop: "100px",
         alignItems: "center",
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       }}
@@ -169,3 +170,4 @@ const VideoHero = () => {
 };
 
 export default VideoHero;
+

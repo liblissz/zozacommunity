@@ -136,7 +136,11 @@ const Pricing = () => {
                     padding: "1rem",
                     textAlign: "center",
                   }}>
+                    
                     <h3 style={{ marginBottom: "1rem", fontSize: "1.2rem", color: "#444" }}>{pdf.title}</h3>
+                       <div style={{ textAlign: "center" }}>
+              <img src={img} alt="food program" style={{ height: "300px", borderRadius: "10px", maxWidth: "100%" }} />
+            </div>
                     <embed src={pdf.url} type="application/pdf" width="100%" height="400px" style={{ borderRadius: "8px" }} />
                     <a href={pdf.url} download style={{
                       display: "inline-block",
@@ -152,9 +156,7 @@ const Pricing = () => {
               </div>
             </div>
 
-            <div style={{ textAlign: "center" }}>
-              <img src={img} alt="food program" style={{ height: "300px", borderRadius: "10px", maxWidth: "100%" }} />
-            </div>
+         
           </section>
         </div>
 
@@ -230,3 +232,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+

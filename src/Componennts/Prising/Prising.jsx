@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Prising.css";
 import img from "/img30.jpg"; // make sure the path is correct
-
+import CTA from '../CTA/CTA'
 // 👤 People data for Bio Section
 const people = [
   {
@@ -222,6 +222,7 @@ const Pricing = () => {
         )}
 
       </div>
+        <CTA/>
     </section>
   );
 };

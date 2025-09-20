@@ -3,7 +3,7 @@ import './Footer.css'
 import { Link } from 'react-router-dom';
 import { WhatsappShareButton, WhatsappIcon } from "react-share";
 const Footer = () => {
-   const shareUrl = "https://zozacommunity.vercel.app"; // change to your link
+   const shareUrl = "https://wa.me/message/WYIXQMMFCXDVH1"; // change to your link
   const shareText = "Chat with us on WhatsApp!";
   
   const [loagout, removelogout] = useState(false)
@@ -113,6 +113,7 @@ useEffect(() => {
 };
 
 export default Footer;
+
 
 
 

@@ -7,18 +7,71 @@ const plans = [/* unchanged */];
 
 // 👤 People data for Bio Section
 const people = [
+
   {
+    name: "Mr. Afuh Alfred Ngum",
+    position: "Executive Director",
+    picture: "/profile1.jpg",
+    bio: `Mr. Afuh Alfred Ngum is a dedicated Peace advocate, youth empowerment leader, community builder, and humanitarian with over 8 years of experience in Cameroon and parts of Africa. Experienced in working in conflict-affected and grassroots communities fostering peace, promoting development, countering youth vulnerability and violent extremism. Received leadership award in recognition of dedication to peace building and community development in Cameroon and Africa. Trained and certified as a Peace Advocate Expert by the Peace Academy, as a Humanitarian Peacekeeping General by GAICAM International, and as a Peaceweaver by Civic Watch.
+WORK EXPERIENCE
+FOUNDER/EXECUTIVE DIRECTOR ZOZAC COMMUNITY (ZOZAC) | Jan 2020 – Present
+• Initiate programs and projects aimed at building the capacity of youths and local organizations in Cameroon and Africa.
+• Runs an international program launched in Uganda East Africa that built capacities of about 60 organizations and 400+ youths.
+• Coordinate day-to-day functioning of the organization, supervising 6 staff.
+• Partnered with Interfaith Vision Cameroon in 2021 to advocate for a health center in Mboma, Limbe.
+• Led a team from 8+ countries to Uganda for the official launch of ACFLO and ACDGs.
+• Established database of 500+ contacts including government departments, international agencies, youth organizations.
+------------------------------------------------------------------------------------------------------------
+GLOBAL PRESIDENT OF AFRICAN CONGRESS FOR LOCAL ORGANIZATIONS (ACFLO) | June 2020 – Present
+• Mobilized and empowered youths through trainings and outreach activities in Cameroon, Nigeria, and Uganda.
+• Trained 100+ youth leaders on involvement in development, unity, and peace.
+• Provided consultancy to youth organizations and leaders for program implementation.
+• Strengthened relationships between local organizations for development and peace.
+------------------------------------------------------------------------------------------------------------
+FOUNDER/EXECUTIVE DIRECTOR ZOZAC INSTITUTE | Jan 2023 – Present
+• Championing the vision, mission, and goals of the institute.
+• Developed engaging lesson plans in peace building, community development, youth empowerment, and countering extremism.
+• Recruiting and mentoring trainers.
+• Compiling and analyzing data on student progress.
+• Creating collaborative and positive learning environments.
+------------------------------------------------------------------------------------------------------------
+TIKO YOUTHS NETWORK | Nov 2023 – Apr 2025
+• Researched and supported programming on advocacy, youth empowerment, and peace.
+• Conducted needs and impact assessments.
+• Consulted with organizations and stakeholders on youth and community development.
+------------------------------------------------------------------------------------------------------------
+CONSULTANT | Blissz Concept Group LTD | Feb 2025 – Present
+• Mapped affected communities and vulnerable youths in SW Cameroon to identify needs and support areas.
+------------------------------------------------------------------------------------------------------------
+CAMEROON REPRESENTATIVE | One World Nexus, New York USA | 2023 – 2025
+
+TRAINER | Global Elite’s Mindset for Excellence Nigeria | 2024
+• Trained youth leaders on community development and creating thriving ecosystems.
+------------------------------------------------------------------------------------------------------------
+PEACE BUILDING AND PEACE GUARDS | ZOZAC COMMUNITY PEACE PROGRAM | 2025 – Present
+• Promoting peace and unity in Cameroon.
+------------------------------------------------------------------------------------------------------------
+STATE DELEGATE | ACFLO Summit Uganda | Jul 2018
+• Represented Cameroonian youths to discuss growth of local organizations and youth issues.
+------------------------------------------------------------------------------------------------------------
+GUEST SPEAKER AT
+Noblemen Book lunching  november 2023
+African Congress For Local Organization (ACFLO) in Uganda    October to November  2024
+Hear My Cry Submit     july  2025
+AWARDS & RECOGNITION
+• Grassroots Community Award of the Year 2023 – National Council of NGOs, Cameroon
+• Young Youth Achiever of the Year 2024 – KeyPoint Awards
+• Community Leadership & Youth Empowerment Award 2025 – Community Impact Awards, EEFEG Yaounde`,
+  },
+
+
+    {
     name: "Lee Bliss",
     position: "Software Engineer",
     picture: "/profile1.jpg",
     bio: "Lee Bliss is a passionate software engineer with experience in web and app development. He specializes in creating innovative solutions for real-world problems.",
   },
-  {
-    name: "Mr. Afuh Alfred Ngum",
-    position: "Executive Director",
-    picture: "/profile1.jpg",
-    bio: `Mr. Afuh Alfred Ngum is a dedicated Peace advocate... (long text)`,
-  },
+
 ];
 
 const Pricing = () => {

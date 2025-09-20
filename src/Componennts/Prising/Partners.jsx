@@ -2,10 +2,9 @@ import React from "react";
 
 // Array of partner objects
 const partners = [
-  { name: "Partner 1", logo: "/partner1.jpg", url: "https://partner1.com" },
-  { name: "Partner 2", logo: "/partner2.jpg", url: "https://partner2.com" },
-  { name: "Partner 3", logo: "/partner3.jpg", url: "https://partner3.com" },
-  { name: "Partner 4", logo: "/partner4.jpg", url: "https://partner4.com" },
+  { name: "ZOZAC WOMEN NETWORK", logo: "/partner1.jpg", url: "https://partner1.com" },
+  { name: "ZOZAC YOUTH FELLOWSHIP", logo: "/partner3.jpg", url: "https://partner3.com" },
+  { name: "ZOZAC INSTITUTE", logo: "/partner4.jpg", url: "https://partner4.com" },
 ];
 
 const Partners = () => {

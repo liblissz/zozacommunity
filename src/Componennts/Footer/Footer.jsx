@@ -55,7 +55,7 @@ useEffect(() => {
             <ul>
               <li><a href="zozaccommunity@gmail.com">zozaccommunity@gmail.com</a></li>
               <li><a href="tel: 674274276">674274276</a></li>
-              <li><a href="#">Location: Cameroon, At Likomba</a></li>
+              <li><a href="#">Location: Likomba-Tiko SW Region Cameroon</a></li>
              {loagout && <li><a > <button onClick={handlelogout} className="btn-primary">logout</button></a></li>}
             </ul>
           </div>

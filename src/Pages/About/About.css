@@ -108,7 +108,7 @@ ul.grape {
 .pineapple {
   display: inline-block;
   padding: 12px 30px;
-  background-color:#2d5b1a;
+  background-color:#2d5b1a !important;
   color: #fff;
   font-weight: 600;
   text-decoration: none;

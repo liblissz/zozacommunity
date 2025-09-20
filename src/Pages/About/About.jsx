@@ -67,7 +67,7 @@ Vision: Be the leading force transforming, educating, and empowering individuals
 </li>
               </ul>
               <div className="lemon">
-                <a href="tel: 674274276" className="pineapple">
+                <a href="tel: 674274276" className="pineapple" style={{background: "#2d5b1a"}}>
                   Contact Us
                 </a>
               </div>

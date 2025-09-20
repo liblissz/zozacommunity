@@ -152,8 +152,10 @@ const VideoHero = () => {
         color: "white",
         padding: "40px",
         display: "flex",
+          flexDirection: "column",
         justifyContent: "center",
         alignItems: "flex-start",
+          marginTop: "100px",
         fontFamily: "Arial, sans-serif",
       }}
     >
@@ -257,5 +259,6 @@ const VideoHero = () => {
 };
 
 export default VideoHero;
+
 
 

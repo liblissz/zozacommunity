@@ -10,6 +10,7 @@ import VideoHero from './Pages/Videoposts/Videoposts';
 import Picturepost from './Pages/Pictureposts/Picturepost';
 import Order from './Pages/Orderpage/Order';
 import About from './Pages/About/About';
+import VolunteerPage from './Pages/Vulonteers';
 // import OrderForm from './Pages/Orderpage/Order';
 
 
@@ -68,6 +69,7 @@ function App() {
         <Route path='/posts/:id' element={<VideoHero/>}/>
         <Route path='/picturepost/:id' element={<Picturepost/>}/>
          <Route path='/about' element={<About/>}/>
+         <Route path='/vol' element={<VolunteerPage/>}/>
       </Routes>
     <Footer/>
     

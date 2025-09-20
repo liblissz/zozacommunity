@@ -155,7 +155,8 @@ const Pricing = () => {
           </section>
         </div>
 
-        {/* Pricing Plans */}
+
+        {/* Pricing Plans
         <div className="pricing-grid">
           {plans.map((plan, index) => (
             <div
@@ -188,7 +189,7 @@ const Pricing = () => {
               </Link>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

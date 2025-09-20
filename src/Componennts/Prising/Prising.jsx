@@ -62,12 +62,12 @@ AWARDS & RECOGNITION
 - Young Youth Achiever of the Year 2024 – KeyPoint Awards
 - Community Leadership & Youth Empowerment Award 2025 – Community Impact Awards, EEFEG Yaounde`,
   },
-  {
-    name: "Lee Bliss",
-    position: "Software Engineer",
-    picture: "/profile1.jpg",
-    bio: "Lee Bliss is a passionate software engineer with experience in web and app development. He specializes in creating innovative solutions for real-world problems.",
-  },
+  // {
+  //   name: "Lee Bliss",
+  //   position: "Software Engineer",
+  //   picture: "/profile1.jpg",
+  //   bio: "Lee Bliss is a passionate software engineer with experience in web and app development. He specializes in creating innovative solutions for real-world problems.",
+  // },
 ];
 
 const Pricing = () => {

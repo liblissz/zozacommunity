@@ -26,7 +26,7 @@ useEffect(() => {
               <i className="fas fa-brain"></i>
               <span>ZOZAC  </span>
             </div>
-            <p>Creating platforms for dialogue, unity, and sustainable peace among communities.</p>
+            <p>Creating Platforms for Dialogue, Unity, Collaboration, Youths Empowerment & Sustainable  Skills for Community Development.</p>
             <div className="social-links">
               {/* <a href="#"><i className="fab fa-twitter"></i></a> */}
               <a href="https://cm.linkedin.com/in/zozac-community-94a547268" target='_blank'><i className="fab fa-linkedin"></i></a>

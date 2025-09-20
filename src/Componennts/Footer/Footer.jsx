@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import { WhatsappIcon } from "react-share"; // ✅ only need the icon
-
+import logo from "/logo1.jpg";
 const Footer = () => {
   const [loagout, removelogout] = useState(false);
 
@@ -133,4 +133,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 

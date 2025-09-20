@@ -11,7 +11,7 @@ const Partners = () => {
   // Styles
   const containerStyle = {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+    gridTemplateColumns: "1fr 1fr",
     gap: "2rem",
     padding: "2rem",
     justifyItems: "center",

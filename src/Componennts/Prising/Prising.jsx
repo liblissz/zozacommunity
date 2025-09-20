@@ -83,7 +83,7 @@ const Pricing = () => {
 
   const imgStyle = {
     width: "100%",
-    height: "auto",
+    height: "400px",
     maxHeight: "220px",
     objectFit: "cover",
     borderRadius: "10px",

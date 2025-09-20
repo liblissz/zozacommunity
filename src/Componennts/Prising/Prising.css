@@ -134,7 +134,6 @@ input:checked + .slider:before {
 }
 @media (max-width: 500px) {
   .increasesize{
-    position: absolute !important;
-    width: 500px !important;
+    width: 700px !important;
   }
 }

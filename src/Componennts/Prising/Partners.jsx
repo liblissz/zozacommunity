@@ -4,14 +4,14 @@ import React from "react";
 const partners = [
   { name: "ZOZAC WOMEN NETWORK", logo: "/partner1.jpg", url: "https://partner1.com" },
   { name: "ZOZAC YOUTH FELLOWSHIP", logo: "/partner3.jpg", url: "https://partner3.com" },
-  { name: "ZOZAC INSTITUTE", logo: "/partner4.jpg", url: "https://partner4.com" },
+  { name: "zozac institude", logo: "/partner4.jpg", url: "https://partner4.com" },
 ];
 
 const Partners = () => {
   // Styles
   const containerStyle = {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
     gap: "2rem",
     padding: "2rem",
     justifyItems: "center",

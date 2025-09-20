@@ -26,10 +26,10 @@ const useCasesData = [
   {
     id: 'Our Mission',
     title: 'Our Mission',
-    description: `To see an Africa led by responsible, innovative, and compassionate leaders who are deeply rooted in community values..`,
+    description: `Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.`,
     points: [
    
-      'Uniting Africa',
+    
     ],
     imgSrc: img2,
     imgAlt: 'ZOZAC',
@@ -37,12 +37,10 @@ const useCasesData = [
   {
     id: 'Our Vision',
     title: 'Our Vision',
-    description: `To empower local communities through education, leadership, technology, and humanitarian initiatives that promote peace and development.`,
+    description: ` Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next `,
     points: [
-      'Integrity',
-      'innovation',
-      'Leadership',
-      'Community Empowerment'
+      
+      
      
     ],
     imgSrc: img3,

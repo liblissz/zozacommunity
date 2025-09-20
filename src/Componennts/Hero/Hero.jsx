@@ -14,7 +14,7 @@ const Hero = () => {
           <h1>Welcome to ZOZAC Community
 </h1>
           <p>
-      Building Innovative Leaders, Transforming Grassroots Communities
+     Promoting Peace, Social Cohesion, Youths Empowerment & Community Development.
           </p>
           <div className="hero-buttons" onClick={()=> setdonate(!donate) } >
             <a className="btn-primary">

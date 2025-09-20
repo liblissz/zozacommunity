@@ -74,7 +74,7 @@ const Order = () => {
             </fieldset>
 
             <fieldset className="victor">
-              <legend><span className="number">2</span> Your Order Information</legend>
+              <legend><span className="number">2</span> About your self</legend>
               <label className="nina">Detailed Information About You:</label>
               <textarea value={details} onChange={(e) => setdetails(e.target.value)} className="flora innerr"></textarea>
             </fieldset>

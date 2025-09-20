@@ -19,7 +19,7 @@ const Donate = () => {
           </p>
 
           <div className="donate-section">
-            <h3>💳 Credit Card Number</h3>
+            <h3>💳 Account Number</h3>
             <p className="donate-code">CM2110002000639000165086873</p>
             <br/>
                        <h3>Swift Code:
@@ -46,6 +46,7 @@ const Donate = () => {
 };
 
 export default Donate;
+
 
 
 

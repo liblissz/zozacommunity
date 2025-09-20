@@ -26,7 +26,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer-brand">
             <div className="logo">
-              <i className="fas fa-brain"></i>
+               <img
+            src={logo}
+            alt="zozac logo"
+            style={{ height: "60px", width: "60px" }}
+          />
               <span>ZOZAC</span>
             </div>
             <p>
@@ -129,3 +133,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

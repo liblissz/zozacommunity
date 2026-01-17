@@ -26,7 +26,8 @@ const useCasesData = [
   {
     id: 'Our Mission',
     title: 'Our Mission',
-    description: `Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.`,
+    description: `Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
+`,
     points: [
    
     
@@ -37,7 +38,7 @@ const useCasesData = [
   {
     id: 'Our Vision',
     title: 'Our Vision',
-    description: ` Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next `,
+    description: `Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next generation. `,
     points: [
       
       
@@ -111,3 +112,4 @@ const UseCases = () => {
 };
 
 export default UseCases;
+

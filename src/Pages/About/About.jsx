@@ -131,6 +131,24 @@ ZOZAC Community is legally registered under the Cameroon government with the hea
                 groups, and communities with knowledge to prepare for tomorrow and the
                 next generation.
 
+
+                            <br/>
+            <br/>
+ <p style={{color: "green"}}>With it motto:</p>
+       <br/>
+Creating innovative leaders for a better tomorrow.
+
+                                            <br/>
+            <br/>
+ <p style={{color: "green"}}>Slogan:</p>
+       <br/>
+Togetherness is strength 
+                                <br/>
+            <br/>
+ <p style={{color: "green"}}>Goal: </p>
+       <br/>
+Create a sustainable model for community development that will be replicated in other regions.
+
                  </div>
 
               
@@ -196,6 +214,7 @@ ZOZAC Community is legally registered under the Cameroon government with the hea
 };
 
 export default About;
+
 
 
 

@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
           <div className="hero-buttons" onClick={()=> setdonate(!donate) } >
             <a className="btn-primary">
-           Place  Donation  <i className="fas fa-arrow-right"></i>
+           Donate  <i className="fas fa-arrow-right"></i>
             </a>
             <a href="https://youtu.be/O8iq36U6fS0?si=ClfZwx1UvPyAii71" className="btn-secondary">
               Watch A Video <i className="fas fa-play"></i>
@@ -50,6 +50,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 

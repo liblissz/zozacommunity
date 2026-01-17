@@ -8,6 +8,7 @@ const partners = [
       { name: "BLISSZ CONCEPTS G", logo: "/4.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
       { name: "BLISSZ CONCEPTS G", logo: "/5.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
       { name: "BLISSZ CONCEPTS G", logo: "/6.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
+          { name: "BLISSZ CONCEPTS G", logo: "/7.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
    
 ];
 
@@ -16,7 +17,7 @@ const Partners = () => {
   const containerStyle = {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-    gap: "2rem",
+    gap: "4rem",
     padding: "2rem",
     justifyItems: "center",
     alignItems: "center",
@@ -36,8 +37,8 @@ const Partners = () => {
   };
 
   const imgStyle = {
-    width: "100%",
-    height: "150px",
+    width: 330,
+    height: 330,
     objectFit: "contain",
     marginBottom: "1rem",
   };
@@ -89,6 +90,7 @@ const Partners = () => {
 };
 
 export default Partners;
+
 
 
 

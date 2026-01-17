@@ -23,6 +23,9 @@
 .banana-row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 10px auto;
+  margin-bottom: 12px;
   gap: 20px;
 }
 
@@ -93,4 +96,5 @@
     max-width: calc(100% - 20px);
   }
 }
+
 

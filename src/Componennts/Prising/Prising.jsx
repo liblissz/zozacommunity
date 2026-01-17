@@ -3,6 +3,7 @@ import "./Prising.css";
 import img from "/img30.jpg"; // make sure the path is correct
 import CTA from '../CTA/CTA'
 import Partners from "./Partners"
+import Team from "./Team/Team"
 // 👤 People data for Bio Section
 const people = [
   {
@@ -226,10 +227,11 @@ const Pricing = () => {
 
       </div>
         <CTA/>
-        <Partners/>
+    <Team/>
     </section>
   );
 };
 
 export default Pricing;
+
 

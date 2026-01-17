@@ -96,70 +96,7 @@ const Pricing = () => {
           </section>
         </div>
 
-        {/* Bio Section */}
-        {/* <div style={{ marginTop: "4rem" }}>
-          <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>Meet Our Team</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "1.5rem", marginTop: "3rem" }}>
-            {people.map((person, i) => (
-              <div key={i} style={{
-                background: "#fff",
-                borderRadius: "12px",
-                boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
-                padding: "1rem",
-                textAlign: "center",
-                cursor: "pointer",
-                transition: "transform 0.3s ease",
-              }}
-                onClick={() => setSelectedPerson(person)}
-              >
-                <img src={person.picture} alt={`${person.name} profile`} style={imgStyle} />
-                <h3>{person.name}</h3>
-                <p style={{ color: "#777" }}>{person.position}</p>
-                <button style={{
-                  marginTop: "1rem",
-                  padding: "0.6rem 1.2rem",
-                  background: "#2d5b1a",
-                  color: "#fff",
-                  borderRadius: "8px",
-                  border: "none",
-                  cursor: "pointer"
-                }}>View Bio</button>
-              </div>
-            ))}
-          </div>
-        </div> */}
-
-        {/* Modal */}
-        /* {selectedPerson && (
-          <div style={{
-            position: "fixed",
-            top: 0, left: 0, right: 0, bottom: 0,
-            background: "rgba(0,0,0,0.6)",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            zIndex: 1000,
-            padding: "1rem",
-          }}
-            onClick={() => setSelectedPerson(null)}
-          >
-            <div style={modalContentStyle} onClick={e => e.stopPropagation()}>
-              <button style={{
-                position: "absolute", top: "10px", right: "15px",
-                background: "transparent", border: "none", fontSize: "1.5rem", cursor: "pointer"
-              }}
-                onClick={() => setSelectedPerson(null)}
-              >&times;</button>
-              <img src={selectedPerson.picture} alt={`${selectedPerson.name} profile large`} style={{ maxHeight: "400px", width: "100%", borderRadius: "10px" }} />
-              <h2>{selectedPerson.name}</h2>
-              <p style={{ color: "#777" }}>{selectedPerson.position}</p>
-              <p style={{ marginTop: "1rem", color: "#444", lineHeight: "1.6", whiteSpace: "pre-line", textAlign: "justify" }}>
-                {selectedPerson.bio}
-              </p>
-            </div>
-          </div>
-        )} */
-
+   
       </div>
         <CTA/>
     <Team/>
@@ -169,6 +106,7 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
 
 
 

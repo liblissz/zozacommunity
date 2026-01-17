@@ -119,13 +119,13 @@ ZOZAC Community is legally registered under the Cameroon government with the hea
               
                   <h2>Mission & Vision</h2>
               <div className="text">
-           <p style={{color: "green}}>Mission:</p> 
+           <p style={{color: "green"}}>Mission:</p> 
        <br/>
       Empower individuals with self-awareness, discipline,
       and the willpower to lead themselves and others towards a positive destination built on trust.
                 <br/>
             <br/>
- <p style={{color: "green}}>Vision:</p>
+ <p style={{color: "green"}}>Vision:</p>
        <br/>
       Be the leading force transforming, educating, and empowering individuals, 
                 groups, and communities with knowledge to prepare for tomorrow and the
@@ -196,6 +196,7 @@ ZOZAC Community is legally registered under the Cameroon government with the hea
 };
 
 export default About;
+
 
 
 

@@ -67,7 +67,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
-        <div className="logo">
+        <div className="logo" onClick={()=> window.location.href = "/" }>
           <img
             src={logo}
             alt="zozac logo"
@@ -124,4 +124,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 

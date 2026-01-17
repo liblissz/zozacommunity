@@ -193,7 +193,7 @@
 
 
 import React, { useState, useEffect, useRef } from "react";
-import "./Pricing.css";
+import "./Prising.css";
 import CTA from "../CTA/CTA";
 import Team from "./Team/Team";
 
@@ -374,3 +374,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+

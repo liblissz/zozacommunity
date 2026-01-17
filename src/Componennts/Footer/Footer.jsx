@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Links */}
           <div className="footer-links">
-            <h4>Company</h4>
+            <h4>Organization</h4>
             <ul>
               <Link to={'/about'}>
                 <li><a href="https://pefscomsystem.com/about/">About Us</a></li>
@@ -63,7 +63,7 @@ const Footer = () => {
             <ul>
               <li><a href="mailto:zozaccommunity@gmail.com">zozaccommunity@gmail.com</a></li>
               <li><a href="tel:+237674274276">+237 674274276</a></li>
-              <li><a href="#">Location: Tiko SW Region Cameroon</a></li>
+              <li><a href="#">Location: Tiko SW Region Cameroon P.O BOX 237 TIKO</a></li>
               {loagout && (
                 <li>
                   <button onClick={handlelogout} className="btn-primary">Logout</button>
@@ -133,6 +133,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

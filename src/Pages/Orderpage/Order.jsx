@@ -81,7 +81,7 @@ const Order = () => {
       fontSize: "2.5rem",
       fontWeight: "700",
       marginBottom: "20px",
-      background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      background: "green",
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
     },
@@ -197,8 +197,8 @@ const Order = () => {
       padding: "16px",
       fontSize: "1.1rem",
       fontWeight: "600",
-      backgroundColor: "#667eea",
-      background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      backgroundColor: "green",
+      background: "green",
       color: "white",
       border: "none",
       borderRadius: "8px",
@@ -426,6 +426,7 @@ const Order = () => {
 };
 
 export default Order;
+
 
 
 

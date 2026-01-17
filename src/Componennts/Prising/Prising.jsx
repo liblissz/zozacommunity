@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Prising.css";
 import img from "/img30.jpg"; 
 import CTA from '../CTA/CTA'
-// import Partners from "./Partners"
+import Partners from "./Partners"
 
 import Team from "./Team/Team"
 
@@ -97,7 +97,7 @@ const Pricing = () => {
         </div>
 
         {/* Bio Section */}
-        <div style={{ marginTop: "4rem" }}>
+        {/* <div style={{ marginTop: "4rem" }}>
           <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>Meet Our Team</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "1.5rem", marginTop: "3rem" }}>
             {people.map((person, i) => (
@@ -127,10 +127,10 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Modal */}
-        {selectedPerson && (
+        /* {selectedPerson && (
           <div style={{
             position: "fixed",
             top: 0, left: 0, right: 0, bottom: 0,
@@ -158,16 +158,18 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-        )}
+        )} */
 
       </div>
         <CTA/>
     <Team/>
+      <Partners/>
     </section>
   );
 };
 
 export default Pricing;
+
 
 
 

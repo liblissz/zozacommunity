@@ -89,10 +89,10 @@ const Picturepost = () => {
 
             {/* Price + Button */}
             <div className="watermelon">
-              <div className="lemon">
+              {/* <div className="lemon">
                 <span className="newPrice">{picture.price} frs</span>
-              </div>
-              <button className="blueberry">
+              </div> */}
+              {/* <button className="blueberry">
                 <span>ZOZAC COMMUNITY</span>
                 <svg
                   className="raspberry"
@@ -108,7 +108,8 @@ const Picturepost = () => {
                   <line x1="3" y1="6" x2="21" y2="6" />
                   <path d="M16 10a4 4 0 01-8 0" />
                 </svg>
-              </button>
+              </button> */}
+              
             </div>
 
             {/* Rating */}
@@ -139,3 +140,4 @@ const Picturepost = () => {
 };
 
 export default Picturepost;
+

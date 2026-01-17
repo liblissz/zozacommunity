@@ -77,7 +77,7 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
 
         <div className="section-header">
         <h2> Our Focus Thermatic Areas:</h2>
-          <p>
+        </div>
         <div className="features-grid">
           {features.map((feature, index) => (
             <div key={index} className="feature-card">
@@ -95,6 +95,7 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
 };
 
 export default Features;
+
 
 
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./Prising.css";
 import CTA from "../CTA/CTA";
 import Partners from "./Partners";
-import Team from "./Team/Team";
+import Team from "../Team/Team";
 
 // Newsletter PDF files (put report.pdf in public/ or adjust path)
 const pdfFiles = [{ title: "Quarterly Newsletter", url: process.env.PUBLIC_URL + "/report.pdf" }];
@@ -127,4 +127,5 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
 

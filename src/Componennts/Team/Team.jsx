@@ -35,8 +35,8 @@ const Team = () => {
           <img src={admin.profileImage} alt={admin.username} />
           <h2>{admin.username}</h2>
           <p className="orange-role">{admin.about}</p>
-          <p>{admin.email}</p>
-          <a href={`tel: ${admin.number}`}>Call</a>
+          {/* <p>{admin.email}</p> */}
+          {/* <a href={`tel: ${admin.number}`}>Call</a> */}
         </div>
      )) 
         }
@@ -50,3 +50,4 @@ const Team = () => {
 };
 
 export default Team;
+

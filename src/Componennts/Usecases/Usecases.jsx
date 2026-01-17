@@ -37,7 +37,7 @@ const useCasesData = [
     imgAlt: 'ZOZAC',
   },
        {
-    id: 'Our Mission',
+    id: 'Our Approach',
     title: 'Our Approach',
     description: `We work closely with individuals, communities, organizations, and stakeholders to design and implement programs that meet their unique needs. And our approach is centered on inclusivity, participation, and sustainability`,
        
@@ -45,8 +45,8 @@ const useCasesData = [
    
     
     ],
-    imgSrc: "",
-    imgAlt: '',
+    imgSrc: img2,
+    imgAlt: 'ZOZAC',
   },
   {
     id: 'Our Vision',
@@ -125,5 +125,6 @@ const UseCases = () => {
 };
 
 export default UseCases;
+
 
 

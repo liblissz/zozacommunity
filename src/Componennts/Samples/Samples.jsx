@@ -254,7 +254,7 @@ const Samples = () => {
           style={{
             background: more
               ? "green"
-              : "linear-gradient(135deg, #4facfe, #00f2fe)",
+              : "green",
             color: "white",
             border: "none",
             borderRadius: "8px",
@@ -276,4 +276,5 @@ const Samples = () => {
 };
 
 export default Samples;
+
 

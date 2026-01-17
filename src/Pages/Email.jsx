@@ -1,218 +1,86 @@
 import React from "react";
 
-const ContactForm = () => {
+const About = () => {
   return (
-    <div
+    <section
       style={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "20px",
-        background: "linear-gradient(135deg, #f4f7f9, #e8f0ec)",
+        padding: "60px 20px",
+        backgroundColor: "#f9f9f9",
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       }}
     >
-      {/* FORM CARD */}
       <div
         style={{
-          width: "100%",
-          maxWidth: "520px",
+          maxWidth: "1000px",
+          margin: "0 auto",
           background: "#ffffff",
+          padding: "40px",
           borderRadius: "16px",
-          boxShadow: "0 20px 50px rgba(0,0,0,0.12)",
-          padding: "40px 30px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
         }}
       >
-        {/* HEADER */}
-        <div style={{ textAlign: "center", marginBottom: "30px" }}>
-          <h1
-            style={{
-              margin: 0,
-              fontSize: "26px",
-              color: "#2d5b1a",
-              letterSpacing: "0.5px",
-            }}
-          >
-            Get in Touch
-          </h1>
-
-          <p
-            style={{
-              marginTop: "10px",
-              fontSize: "15px",
-              color: "#666",
-              lineHeight: "1.6",
-            }}
-          >
-            We'd love to hear from you. Please fill out the form below and our
-            team will get back to you shortly.
-          </p>
-        </div>
-
-        {/* FORM */}
-        <form action="https://formsubmit.co/zozaccommunity@gmail.com" method="POST">
-          {/* NAME */}
-          <div style={{ marginBottom: "20px" }}>
-            <label
-              style={{
-                display: "block",
-                fontSize: "14px",
-                marginBottom: "6px",
-                color: "#444",
-              }}
-            >
-              Full Name
-            </label>
-
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Enter your full name"
-              style={{
-                width: "100%",
-                padding: "14px 16px",
-                fontSize: "15px",
-                borderRadius: "10px",
-                border: "1px solid #ccc",
-                outline: "none",
-              }}
-              onFocus={(e) => {
-                e.target.style.border = "1px solid #2d5b1a";
-                e.target.style.boxShadow =
-                  "0 0 0 3px rgba(45,91,26,0.15)";
-              }}
-              onBlur={(e) => {
-                e.target.style.border = "1px solid #ccc";
-                e.target.style.boxShadow = "none";
-              }}
-            />
-          </div>
-
-          {/* EMAIL */}
-          <div style={{ marginBottom: "20px" }}>
-            <label
-              style={{
-                display: "block",
-                fontSize: "14px",
-                marginBottom: "6px",
-                color: "#444",
-              }}
-            >
-              Email Address
-            </label>
-
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Enter your email address"
-              style={{
-                width: "100%",
-                padding: "14px 16px",
-                fontSize: "15px",
-                borderRadius: "10px",
-                border: "1px solid #ccc",
-                outline: "none",
-              }}
-              onFocus={(e) => {
-                e.target.style.border = "1px solid #2d5b1a";
-                e.target.style.boxShadow =
-                  "0 0 0 3px rgba(45,91,26,0.15)";
-              }}
-              onBlur={(e) => {
-                e.target.style.border = "1px solid #ccc";
-                e.target.style.boxShadow = "none";
-              }}
-            />
-          </div>
-
-          {/* MESSAGE */}
-          <div style={{ marginBottom: "25px" }}>
-            <label
-              style={{
-                display: "block",
-                fontSize: "14px",
-                marginBottom: "6px",
-                color: "#444",
-              }}
-            >
-              Message
-            </label>
-
-            <textarea
-              name="message"
-              rows="4"
-              required
-              placeholder="Write your message here..."
-              style={{
-                width: "100%",
-                padding: "14px 16px",
-                fontSize: "15px",
-                borderRadius: "10px",
-                border: "1px solid #ccc",
-                outline: "none",
-                resize: "vertical",
-              }}
-              onFocus={(e) => {
-                e.target.style.border = "1px solid #2d5b1a";
-                e.target.style.boxShadow =
-                  "0 0 0 3px rgba(45,91,26,0.15)";
-              }}
-              onBlur={(e) => {
-                e.target.style.border = "1px solid #ccc";
-                e.target.style.boxShadow = "none";
-              }}
-            />
-          </div>
-
-          {/* SUBMIT BUTTON */}
-          <button
-            type="submit"
-            style={{
-              width: "100%",
-              padding: "15px",
-              fontSize: "16px",
-              fontWeight: "600",
-              borderRadius: "12px",
-              border: "none",
-              cursor: "pointer",
-              color: "#fff",
-              background:
-                "linear-gradient(135deg, #2d5b1a, #3f7d24)",
-              boxShadow:
-                "0 10px 25px rgba(45,91,26,0.35)",
-            }}
-            onMouseOver={(e) => {
-              e.target.style.transform = "translateY(-2px)";
-              e.target.style.boxShadow =
-                "0 15px 30px rgba(45,91,26,0.45)";
-            }}
-            onMouseOut={(e) => {
-              e.target.style.transform = "translateY(0)";
-              e.target.style.boxShadow =
-                "0 10px 25px rgba(45,91,26,0.35)";
-            }}
-          >
-            Send Message
-          </button>
-        </form>
-
-        {/* FOOTER NOTE */}
-        <p
+        <h2
           style={{
-            marginTop: "25px",
             textAlign: "center",
-            fontSize: "13px",
-            color: "#777",
+            marginBottom: "30px",
+            fontSize: "32px",
+            color: "#2d5b1a",
           }}
         >
-          Your information is secure and will not be shared.
+          About ZOZAC Community
+        </h2>
+
+        <p
+          style={{
+            fontSize: "16px",
+            lineHeight: "1.8",
+            color: "#444",
+            marginBottom: "20px",
+          }}
+        >
+          ZOZAC Community is legally registered under the Cameroon government with
+          its headquarters in Tiko sub-division, Fako Division, South West Region,
+          Cameroon, West Africa. The organization operates in conformity with the
+          prescription of Article 7 of Law No{" "}
+          <span style={{ color: "green", fontWeight: "600" }}>
+            90/054 of 19/12/1990
+          </span>{" "}
+          relating to the creation and functioning of associations in Cameroon,
+          with registration number{" "}
+          <span style={{ color: "green", fontWeight: "600" }}>
+            1165/G.37/C84/VOLI/SAAJP
+          </span>
+          . This registration demonstrates our commitment to transparency,
+          accountability, and good governance.
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            lineHeight: "1.8",
+            color: "#444",
+            marginBottom: "20px",
+          }}
+        >
+          We envision a world where communities are empowered, resilient, and
+          capable of driving sustainable development through education,
+          environmental protection, social inclusion, and economic empowerment.
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            lineHeight: "1.8",
+            color: "#444",
+          }}
+        >
+          Through partnerships, innovation, and community participation, ZOZAC
+          Community works to create long-lasting impact while upholding ethical
+          standards and accountability in all our activities.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ContactForm;
+export default About;

@@ -225,6 +225,7 @@ const Order = () => {
     hello: {
       minHeight: "100vh",
       marginTop: "100px",
+        marginBottom: "600px",
     },
     charles: {
       height: "100vh",
@@ -308,14 +309,19 @@ const Order = () => {
             </a>
           </h1>
 
-          <form onSubmit={handleSubmit} style={styles.juliet}>
-            <p>
+                 <p style={{ fontSize: "17px" }}>
               We are committed to making a lasting impact. Partner with us to
               create a better future for our communities, together we can
               achieve much more, because, <b>“Togetherness Is Strength”</b> ZOZAC
               is the spirit of togetherness with the combination of
               self-strength and ability for everyone’s benefits.
             </p>
+
+          <br/>
+           <br/>
+
+          <form onSubmit={handleSubmit} style={styles.juliet}>
+     
 
             <fieldset style={styles.victor}>
               <legend>
@@ -415,3 +421,4 @@ const Order = () => {
 };
 
 export default Order;
+

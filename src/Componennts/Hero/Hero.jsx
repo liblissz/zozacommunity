@@ -20,7 +20,7 @@ const Hero = () => {
             <a className="btn-primary">
            Donate  <i className="fas fa-arrow-right"></i>
             </a>
-            <a href="https://youtu.be/O8iq36U6fS0?si=ClfZwx1UvPyAii71" className="btn-secondary">
+            <a href="https://youtube.com/@zozaccommunity?si=GHaomJurbQWfk_2A" className="btn-secondary">
               Watch A Video <i className="fas fa-play"></i>
             </a>
           </div>
@@ -50,6 +50,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 

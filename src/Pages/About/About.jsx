@@ -1,11 +1,11 @@
 
-import './About.css';
+
 import React, { useState } from 'react';
 
 import img1 from '../../assets/WhatsApp Image 2025-07-04 at 10.09.35_3aa4d729.jpg'
 import img2 from '../../assets/WhatsApp Image 2025-07-04 at 10.09.30_441aaa22.jpg'
 import Team from '../../Componennts/Team/Team';
-
+// import './About.css';
 const About = () => {
 
   const [open, setopen] = useState(false);

@@ -72,8 +72,8 @@ const Samples = () => {
             <h2 style={{fontSize: "24px"}}>ACTIVITIES 
               <br/>
        
-   <p style={{fontSize: "23px"}}>CARRIED OUT
-                </p>
+   {/* <p style={{fontSize: "23px"}}>CARRIED OUT
+                </p> */}
            
               </h2>
                </center>
@@ -181,6 +181,7 @@ const Samples = () => {
 };
 
 export default Samples;
+
 
 
 

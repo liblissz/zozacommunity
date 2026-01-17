@@ -10,7 +10,7 @@
 }
 
 /* MAIN CARD */
-.banana {
+.bananas {
   width: 100%;
   max-width: 420px;
   background: #ffffff;
@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.banana:hover {
+.bananas:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
 }
@@ -60,7 +60,7 @@
   transition: transform 0.5s ease;
 }
 
-.banana:hover .mango img {
+.bananas:hover .mango img {
   transform: scale(1.08);
 }
 

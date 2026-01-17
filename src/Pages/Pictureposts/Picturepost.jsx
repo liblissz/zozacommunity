@@ -44,7 +44,7 @@ const Picturepost = () => {
     <div className="owefui">
       {loading && <ClipLoader />}
       {!loading && picture && (
-        <div className="banana">
+        <div className="bananas">
           {/* Badge */}
           <div className="pineapple">zozac</div>
 
@@ -109,7 +109,7 @@ const Picturepost = () => {
                   <path d="M16 10a4 4 0 01-8 0" />
                 </svg>
               </button> */}
-              
+
             </div>
 
             {/* Rating */}

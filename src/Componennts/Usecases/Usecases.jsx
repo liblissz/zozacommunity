@@ -26,14 +26,27 @@ const useCasesData = [
   {
     id: 'Our Mission',
     title: 'Our Mission',
-    description: `Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
-`,
+    description: `Empower individuals with self-awareness, discipline, and the willpower to lead 
+    themselves and others towards a positive destination built on trust.`,
+       
     points: [
    
     
     ],
     imgSrc: img2,
     imgAlt: 'ZOZAC',
+  },
+       {
+    id: 'Our Mission',
+    title: 'Our Approach',
+    description: `We work closely with individuals, communities, organizations, and stakeholders to design and implement programs that meet their unique needs. And our approach is centered on inclusivity, participation, and sustainability`,
+       
+    points: [
+   
+    
+    ],
+    imgSrc: "",
+    imgAlt: '',
   },
   {
     id: 'Our Vision',
@@ -112,4 +125,5 @@ const UseCases = () => {
 };
 
 export default UseCases;
+
 

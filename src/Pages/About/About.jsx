@@ -28,7 +28,7 @@ const About = () => {
                 while we strive to 
                 create opportunities for growth, development, and positive impact in our communities through areas like:
               </div>
-              <button style={{width: "100%", padding: "12px", background: "#333" }} onClick={()=> setopen(!open)}>Read More...</button>
+              <button style={{width: "100%", padding: "12px", background: "green", color: "#fff" }} onClick={()=> setopen(!open)}>Read More...</button>
 
               {open  && 
                 <ul className="grape">
@@ -156,6 +156,7 @@ Vision: Be the leading force transforming, educating, and empowering individuals
 };
 
 export default About;
+
 
 
 

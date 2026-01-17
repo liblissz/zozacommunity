@@ -81,7 +81,21 @@ Fostering sustainable development and improving the quality of life for communit
                   <br/>
 Protecting and conserving the natural environment, promoting sustainable practices and mitigating the impact of climate change.
                    </li>
-        
+          <li>
+                  <b>Our Story: </b>
+            <br/>
+                  <br/>
+ZOZAC Community was founded by Afuh Alfred Ngum, a visionary leader who overcame incredible adversity to drive
+            positive change. Witnessing the struggles of vulnerable youths and the lack of opportunities for education,
+            sustainable skills, and employment, he decided to take action starting in 2009 by opening a free recording 
+            studio, movie production house and a stage where young talents can showcase their talents as a young leader 
+            and in 2020 he founded ZOZAC and in 2022, we registered ZOZAC Community, a dynamic association dedicated to
+            training innovative leaders and promoting community development. And the name "ZOZAC" is derived from our founder 
+            created language, which means "Togetherness Is Strength." This reflects our core belief that collective efforts and 
+            commitment to a common
+            goal are essential for creating lasting impact and driving positive change.
+          
+          </li>
       </ul>}
 
 
@@ -157,6 +171,7 @@ Vision: Be the leading force transforming, educating, and empowering individuals
 };
 
 export default About;
+
 
 
 

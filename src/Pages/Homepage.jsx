@@ -5,7 +5,7 @@ import UseCases from '../Componennts/Usecases/Usecases'
 import Samples from '../Componennts/Samples/Samples'
 import Pricing from '../Componennts/Prising/Prising'
 // import CTA from '../Componennts/CTA/CTA'
-import ContactForm  from "/Email"
+import ContactForm  from "./Email"
 
 const Homepage = () => {
   return (
@@ -23,6 +23,7 @@ const Homepage = () => {
 }
 
 export default Homepage
+
 
 
 

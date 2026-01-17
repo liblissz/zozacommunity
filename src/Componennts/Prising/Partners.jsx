@@ -68,7 +68,7 @@ const Partners = () => {
         {partners.map((partner, index) => (
           <a
             key={index}
-            href={partner.url}
+            href={partner.logo}
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
@@ -89,4 +89,5 @@ const Partners = () => {
 };
 
 export default Partners;
+
 

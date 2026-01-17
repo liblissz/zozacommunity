@@ -11,17 +11,31 @@ ul.grape {
 }
 
 .banana2 {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-top: 90px !important;
-  padding: 0 20px;
+  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
 
-  gap: 40px;
+  /* gap: 40px; */
   justify-content: space-between;
+
+
+
+  /* */
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 0 30px; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  gap: 60px;
+  justify-content: space-between;
+
+
 }
 
-
+/* 
 .banana2 {
   max-width: 1400px;
   width: 100%;
@@ -31,7 +45,7 @@ ul.grape {
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-between;
-}
+} */
 
 /* .banana {
   max-width: 1200px;

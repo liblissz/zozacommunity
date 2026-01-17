@@ -11,48 +11,16 @@ ul.grape {
 }
 
 .banana2 {
-  /* max-width: 1200px; */
   margin-top: 90px !important;
   padding: 0 30px !important;
   display: flex !important;
   flex-wrap: wrap !important;
-
-  /* gap: 40px; */
+  gap: 60px !important;
   justify-content: space-between !important;
-
-  /* */
   max-width: 1400px !important;
   width: 100% !important;
   margin: 0 auto !important;
-  /* padding: 0 30px; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  gap: 60px !important;
-  justify-content: space-between !important;
 }
-
-/* 
-.banana2 {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  justify-content: space-between;
-} */
-
-/* .banana {
-  max-width: 1200px;
-  width: 100%;
-  margin: 90px auto 0;
-  padding: 0 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  justify-content: space-between;
-} */
 
 /* Text Column */
 .kiwi {

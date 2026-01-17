@@ -10,20 +10,20 @@ ul.grape {
   margin: 0;
 }
 
-/* .banana {
+.banana2 {
   max-width: 1200px;
-  margin-top: 90px !important ;
+  margin-top: 90px !important;
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
 
   gap: 40px;
   justify-content: space-between;
-} */
+}
 
 
-/* .banana {
-  max-width: 1400px; 
+.banana2 {
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px;
@@ -31,8 +31,9 @@ ul.grape {
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-between;
-} */
-.banana {
+}
+
+/* .banana {
   max-width: 1200px;
   width: 100%;
   margin: 90px auto 0;
@@ -41,7 +42,7 @@ ul.grape {
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-between;
-}
+} */
 
 
 /* Text Column */

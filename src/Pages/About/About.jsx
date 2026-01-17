@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <section className="apple">
-        <div className="banana">
+        <div className="banana2">
           {/* Text Column */}
           <div className="kiwi">
             <div className="pear">

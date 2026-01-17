@@ -7,12 +7,12 @@ import Team from "../Team/Team";
 const pdfFiles = [
   {
     title: "Quarterly Newsletter",
-    url: process.env.PUBLIC_URL + "/report.pdf",
+    url:  "/report.pdf",
   },
 ];
 
 // Hero image
-const heroImg = process.env.PUBLIC_URL + "/img30.jpg";
+const heroImg = "/img30.jpg";
 
 const Pricing = () => {
   return (
@@ -114,3 +114,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+

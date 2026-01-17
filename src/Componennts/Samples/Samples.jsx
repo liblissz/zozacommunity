@@ -253,7 +253,7 @@ const Samples = () => {
         <button
           style={{
             background: more
-              ? "linear-gradient(135deg, #ff6a00, #ee0979)"
+              ? "green"
               : "linear-gradient(135deg, #4facfe, #00f2fe)",
             color: "white",
             border: "none",
@@ -276,3 +276,4 @@ const Samples = () => {
 };
 
 export default Samples;
+

@@ -15,6 +15,7 @@ const Homepage = () => {
           <UseCases/>
           <Samples/>
           <Pricing/>
+      <ContactForm/>
           {/* <CTA/> */}
       
     </div>
@@ -22,5 +23,6 @@ const Homepage = () => {
 }
 
 export default Homepage
+
 
 

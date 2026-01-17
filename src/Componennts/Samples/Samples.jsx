@@ -61,6 +61,7 @@ const Samples = () => {
     fetchvideo();
     fetchpictures();
   }, []);
+  const [more, setloadmore] = useState(false)
 
   return (
     <>
@@ -82,7 +83,7 @@ const Samples = () => {
 
           <div className="samples-grid">
             {loading && <BarLoader />}
-            {imagepost.slice(0, 5).map((item, index) => (
+            {!more ? imagepost.slice(0, 5) : imagepost.map((item, index) => (
               <div className="sample-card" key={index}>
                 <div className="sample-image">
                   <img src={item.ImageUrl} alt={item.title} />
@@ -130,7 +131,7 @@ const Samples = () => {
 
           <div className="samples-grid">
             {loading && <BarLoader />}
-            {videopost.slice(0, 5).map((item, index) => (
+            {!more ? videopost.slice(0, 5) : videopost.map((item, index) => (
               <div className="sample-card" key={index}>
                 <div>
                   <video
@@ -175,12 +176,35 @@ const Samples = () => {
             ))}
           </div>
         </div>
+
+
+
+        <button
+  style={{
+    background: more
+      ? "linear-gradient(135deg, #ff6a00, #ee0979)"
+      : "linear-gradient(135deg, #4facfe, #00f2fe)",
+    color: "white",
+    border: "none",
+    borderRadius: "8px",
+    padding: "12px 20px",
+    fontSize: "16px",
+    fontWeight: "600",
+    cursor: "pointer",
+    transition: "all 0.3s ease",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
+  }}
+  onClick={() => setloadmore(!more)}
+>
+  {more ? "Show Less" : "Load More"}
+</button>
       </section>
     </>
   );
 };
 
 export default Samples;
+
 
 
 

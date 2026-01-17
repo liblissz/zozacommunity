@@ -66,6 +66,12 @@ const Partners = () => {
         Our Partners
       </h2>
       <div style={containerStyle}>
+
+          <p>To our amazing partners, your partnership, collaboration and support have been and still very instrumental in our success. Together, we are developing communities, transforming lives, driving meaningful change and creating a brighter 
+              future for all. Thank you for always standing by us and amplifying our impact.</p>
+
+          <br/>
+          <br/>
         {partners.map((partner, index) => (
           <a
             key={index}
@@ -90,6 +96,7 @@ const Partners = () => {
 };
 
 export default Partners;
+
 
 
 

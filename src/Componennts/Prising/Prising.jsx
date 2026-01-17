@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pricing.css";
+import "./Prising.css";
 import CTA from "../CTA/CTA";
 import Partners from "./Partners";
 import Team from "./Team/Team";
@@ -127,3 +127,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+

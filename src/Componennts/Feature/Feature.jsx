@@ -66,6 +66,11 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
             has the potential to make a difference, while we strive to create opportunities for
             growth, development, and positive impact in our communities through areas like:
           </p>
+          <br/>
+
+                <button className="hover" style={{width: "100%", padding: "12px",
+                              background: "green", color: "#fff", border: "none", outline: "none" }} 
+                onClick={()=> window.location.href = "/about"}>{"Read More"}</button>
         </div>
         <div className="features-grid">
           {features.map((feature, index) => (
@@ -84,6 +89,7 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
 };
 
 export default Features;
+
 
 
 

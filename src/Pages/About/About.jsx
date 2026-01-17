@@ -154,25 +154,288 @@ Create a sustainable model for community development that will be replicated in 
               
               <ul className="grape">
                 <h1>What We Do</h1>
-                <li>- Mission: Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
-- Vision: Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next generation.
-</li>
-                <li>- Empowering Youths: Encourage youths to utilize their skills and abilities for community development.
-</li>
-                               <li>- Programs for Peace and Unity: Host sports competitions like "Canini Nitata" to promote peace, unity, and community development, train what we call "Peace Guards" to be peace diplomats and advocates. 
-- Skill Development: Offer training sessions to help youths develop their talents and skills.
-- Environmental Conservation: Plant trees and promote eco-friendly environments.
-- Humanitarian Works: Engage in volunteering, humanitarian works, and promote agriculture and culture.
-</li>
+                <li>
+                           <b>Our core purpose: </b>
+            <br/>
+                  <br/>
+                  
+                  Empowering leaders, promoting community development, and positive change through education, 
+                  peace building, youth empowerment, humanitarian aid, and environmental preservation, driven by 
+                  collective efforts and commitment to a 
+                  common goal, creating a brighter future for 
+                  all starting from grassroots communities.
+                </li>
+      <li>
+                  <b>Programs:
+            <br/>
+                  <br/>
+We are dedicated to making a positive impact in the lives of individuals and communities
+        through our diverse flagship programs 
+        that are designed to empower leaders, foster community development and 
+        promote positive change which include:
+          </b>
+          </li>
 
-                               <li>- Education: Provide scholarships and promote quality education for kids and youths.
-- Capacity Building: Organize conferences, seminars, and workshops to educate, transform, and empower.
-</li>
+
+
+                   <li>
+                  <b>Ropauni Peace Guards Initiative</b>
+            <br/>
+                  <br/>
+Promoting community peace and conflict resolution through training, mediation, 
+                     and community engagement, and to create a culture of peace, tolerance, 
+                     and understanding.
+
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Train community peace ambassadors (Peace Guards) </li>
+                         <br/>
+                            <li>Mediate conflicts and disputes</li>
+                         <br/>
+                            <li>Promote peace education and awareness</li>
+                       </ul>
+          
+          </li>
+
+
+                   <li>
+                  <b>ZOZAC Food Program</b>
+            <br/>
+                  <br/>
+Provides food assistance and nutrition support to vulnerable individuals 
+                     and communities, ensuring everyone has access to nutritious food.
+
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Provide food aid to those in need</li>
+                         <br/>
+                            <li>Support sustainable agriculture and food systems</li>
+                         <br/>
+                            <li>Promote nutrition education and awareness</li>
+
+                          <br/>
+                            <li>Reduce food insecurity and malnutrition</li>
+                       </ul>
+          
+          </li>
+
+
+
+
+
+
+                    <li>
+                  <b>Go To School</b>
+            <br/>
+                  <br/>
+Supports education and increases access to quality learning, ensuring every child has the opportunity to learn and succeed.
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Provide educational resources and materials</li>
+                         <br/>
+                            <li>Support teacher training and development</li>
+                         <br/>
+                            <li>Promote literacy and numeracy skills</li>
+
+                          <br/>
+                            <li>Increase access to education for marginalized groups</li>
+                       </ul>
+          
+          </li>
+
+
+
+
+                     <li>
+                  <b>Keypoint Awards</b>
+            <br/>
+                  <br/>
+Recognize and celebrate community leaders and innovators, inspiring and motivating others to make a positive impact.
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Recognize outstanding community contributions</li>
+                         <br/>
+                            <li>Celebrate innovation and creativity</li>
+                         <br/>
+                            <li>Inspire others to make a difference</li>
+
+                          <br/>
+                            <li>Foster a culture of excellence and achievement</li>
+                       </ul>
+          
+          </li>
+
+
+
+
+
+
+                  <li>
+                  <b>ZOZAC Health Center</b>
+            <br/>
+                  <br/>
+ZOZAC Health Center delivers healthcare services (first aids) and promotes well-being.
+                    Our goal is to ensure everyone has access to quality healthcare.
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Provide first aids</li>
+                         <br/>
+                            <li>Promote health education and awareness</li>
+                         <br/>
+                            <li>Support disease prevention and control</li>
+
+                          <br/>
+                            <li>Improve health outcomes and quality of life</li>
+                       </ul>
+          
+          </li>
+
+
+
+
+
                 
-                <li>- Innovation & Education: Support and develop innovative ideas while promoting quality education.
-- Collaboration: Unite organizations for community development, personal growth, and knowledge exchange.
-- Leadership Development: Foster integrity through leadership skills and personal development.
-</li>
+                  <li>
+                  <b>ZOZAC Women Network</b>
+            <br/>
+                  <br/>
+Empowers women and promotes gender equality and support women development and leadership.
+                    <br/>
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Support women economic empowerment</li>
+                         <br/>
+                            <li>Provide training and capacity-building for women</li>
+                         <br/>
+                            <li>Foster a community of women leaders and mentors</li>
+
+                          <br/>
+                         <b>Slogan: </b>
+                         <br/>
+                            <li>Women on the frontline of change</li>
+                       </ul>
+          
+          </li>
+              
+
+
+
+
+
+
+
+
+                  <li>
+                  <b>African Congress For Local Organizations (ACFLO)</b>
+            <br/>
+                  <br/>
+Bringing together other organizations for collaboration and capacity-building, and our goal
+                    is to strengthen local 
+                    organization for community development and promote collective impact.
+                    <br/>
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li> Provide a platform for networking and collaboration</li>
+                         <br/>
+                            <li>Support capacity-building and training for local organizations</li>
+                         <br/>
+                            <li>Promote knowledge sharing and innovation</li>
+          <br/>
+                            <li>Encourage partnerships and resource mobilization</li>
+
+                      
+                       </ul>
+          
+          </li>
+
+
+
+
+
+                
+                  <li>
+                  <b>ZOZAC Institute</b>
+            <br/>
+                  <br/>
+Offer training, research, and capacity and skills building initiatives, support personal and collective development.
+                    <br/>
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li> Provide training and capacity and skills building programs</li>
+                         <br/>
+                            <li>Support research and innovation</li>
+                         <br/>
+                            <li>Develop knowledge sharing and collaboration</li>
+          <br/>
+                            <li>Promote excellence and best practices</li>
+
+                      
+                       </ul>
+          
+          </li>
+
+
+
+
+
+
+
+
+
+                  <li>
+                  <b> ZOZAC Pitch Show</b>
+            <br/>
+                  <br/>
+About showcases and inspiring innovative ideas and supports entrepreneurship.      <br/>
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Provide a platform for entrepreneurs to pitch their ideas</li>
+                         <br/>
+                            <li>Support innovation and creativity</li>
+                         <br/>
+                            <li>Facilitate networking and collaboration</li>
+          <br/>
+                            <li>Promote entrepreneurship and job creation</li>
+
+                      
+                       </ul>
+          
+          </li>
+
+
+
+                 <li>
+                  <b>ZOZAC Youth Fellowship Program</b>
+            <br/>
+                  <br/>
+ZOZAC Youth Fellowship Program supports youth development, leadership,
+                   and mentorship with the goal is to empower young people to become leaders and change-makers.    <br/>
+                     <b>Objectives:</b>
+                        <br/>
+                       <ul className="grape">
+                       <li>Provide training and capacity-building for youth</li>
+                         <br/>
+                            <li> Support youth leadership and mentorship</li>
+                         <br/>
+                            <li>Promote youth entrepreneurship and innovation</li>
+          <br/>
+                            <li>Encourage a community of young leaders and change-makers</li>
+
+                      
+                       </ul>
+          
+          </li>
+              
+            
               </ul>
               <div className="lemon">
                 <a href="tel: 674274276" className="pineapple" style={{background: "#2d5b1a"}}>
@@ -214,6 +477,7 @@ Create a sustainable model for community development that will be replicated in 
 };
 
 export default About;
+
 
 
 

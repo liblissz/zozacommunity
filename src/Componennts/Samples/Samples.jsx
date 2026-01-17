@@ -162,9 +162,9 @@ const Samples = () => {
     </span>
   )}
 </p>
-<span className="btn-text" onClick={()=> window.location.href = item.price}>
+{/* <span className="btn-text" onClick={()=> window.location.href = item.price}>
   Click to See details<i className="fas fa-arrow-right"></i>
-  </span>
+  </span> */}
                   <Link to={`/posts/${item._id}`}>
                     <span className="btn-text">
                       Read More <i className="fas fa-arrow-right"></i>
@@ -181,6 +181,7 @@ const Samples = () => {
 };
 
 export default Samples;
+
 
 
 

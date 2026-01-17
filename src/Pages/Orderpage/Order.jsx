@@ -56,7 +56,10 @@ const Order = () => {
           </h1>
 
           <form onSubmit={handleSubmit} className="juliet">
-            <h1 className="ken">Join Us</h1>
+            <h1 className="ken">We are committed to making a lasting impact. Partner with us to create a better future 
+              for our communities, together we can achieve much more, because, <b>“Togetherness Is Strength”</b>
+              ZOZAC is the spirit of togetherness with the combination of self-strength and ability for everyone’s benefits.
+             </h1>
 
             <fieldset className="victor">
               <legend><span className="number">1</span> Enter Your Details</legend>
@@ -152,3 +155,4 @@ const Order = () => {
 };
 
 export default Order;
+

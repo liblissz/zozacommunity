@@ -72,6 +72,12 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
                               background: "green", color: "#fff", border: "none", outline: "none" }} 
                 onClick={()=> window.location.href = "/about"}>{"Read More"}</button>
         </div>
+        <br/>
+        <br/>
+
+        <div className="section-header">
+        <h2> Our Focus Thermatic Areas:</h2>
+          <p>
         <div className="features-grid">
           {features.map((feature, index) => (
             <div key={index} className="feature-card">
@@ -89,6 +95,7 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
 };
 
 export default Features;
+
 
 
 

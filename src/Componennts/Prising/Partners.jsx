@@ -28,8 +28,8 @@ const Partners = () => {
     borderRadius: "12px",
     boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
     padding: "1rem",
-    height: 130,
-    width: 130,
+    height: 330,
+    width: 330,
     textAlign: "center",
     transition: "transform 0.3s ease, box-shadow 0.3s ease",
     cursor: "pointer",
@@ -89,5 +89,6 @@ const Partners = () => {
 };
 
 export default Partners;
+
 
 

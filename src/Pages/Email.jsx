@@ -51,7 +51,7 @@ const ContactForm = () => {
         </div>
 
         {/* FORM */}
-        <form action="https://formsubmit.co/your@email.com" method="POST">
+        <form action="https://formsubmit.co/zozaccommunity@gmail.com" method="POST">
           {/* NAME */}
           <div style={{ marginBottom: "20px" }}>
             <label

@@ -103,8 +103,8 @@ ZOZAC Community was founded by Afuh Alfred Ngum, a visionary leader who overcame
                   <br/>
 ZOZAC Community is legally registered under the Cameroon government with the headquarters in Tiko sub-division, 
                     Fako division, South West Region, Cameroon, West Africa. And it operates in conformity with the 
-                    prescription of Article 7 of Law No 90/054 of 19/12/1990 relating to the creation and functioning of 
-                    associations in Cameroon West Africa, with registration No; 1165/G.37/C84/VOLI/SAAJP. This registration 
+                    prescription of Article 7 of Law No <p style={{color: "green"}}>90/054 of 19/12/1990</p>p> relating to the creation and functioning of 
+                    associations in Cameroon West Africa, with registration No;  <p style={{color: "green"}}>1165/G.37/C84/VOLI/SAAJP.</p> This registration 
                     demonstrates our commitment to transparency, accountability, and good governance. We envisage a world where
                     every individual has the opportunity to reach their full potential and contribute to a better society. We are
                     dedicated to making a lasting impact and creating a brighter future for generations to come, through our work, 
@@ -188,6 +188,7 @@ Vision: Be the leading force transforming, educating, and empowering individuals
 };
 
 export default About;
+
 
 
 

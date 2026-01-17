@@ -2,9 +2,13 @@ import React from "react";
 
 // Array of partner objects
 const partners = [
-  { name: "ZOZAC WOMEN NETWORK", logo: "/partner1.jpg", url: "https://partner1.com" },
-  { name: "ZOZAC YOUTH FELLOWSHIP", logo: "/partner3.jpg", url: "https://partner3.com" },
-  { name: "zozac institude", logo: "/partner4.jpg", url: "https://partner4.com" },
+    { name: "BLISSZ CONCEPTS G", logo: "/1.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
+    { name: "BLISSZ CONCEPTS G", logo: "/2.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
+      { name: "BLISSZ CONCEPTS G", logo: "/3.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
+      { name: "BLISSZ CONCEPTS G", logo: "/4.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
+      { name: "BLISSZ CONCEPTS G", logo: "/5.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
+      { name: "BLISSZ CONCEPTS G", logo: "/6.jfif", url: "https://zozacommunity.vercel.app/partner1.jpg" },
+   
 ];
 
 const Partners = () => {
@@ -24,6 +28,8 @@ const Partners = () => {
     borderRadius: "12px",
     boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
     padding: "1rem",
+    height: 130,
+    width: 130,
     textAlign: "center",
     transition: "transform 0.3s ease, box-shadow 0.3s ease",
     cursor: "pointer",
@@ -73,7 +79,7 @@ const Partners = () => {
               onMouseOut={handleMouseOut}
             >
               <img src={partner.logo} alt={partner.name} style={imgStyle} />
-              <div style={nameStyle}>{partner.name}</div>
+              {/* <div style={nameStyle}>{partner.name}</div> */}
             </div>
           </a>
         ))}
@@ -83,3 +89,4 @@ const Partners = () => {
 };
 
 export default Partners;
+

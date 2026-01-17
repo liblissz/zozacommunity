@@ -14,7 +14,7 @@ const Hero = () => {
           <h1>Welcome to ZOZAC Community
 </h1>
           <p>
-     Promoting Peace, Social Cohesion, Youths Empowerment & Community Development.
+     Promoting Peace, Social Cohesion, Education, Youths Empowerment & Community Development.
           </p>
           <div className="hero-buttons" onClick={()=> setdonate(!donate) } >
             <a className="btn-primary">
@@ -50,6 +50,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
 

@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   background: #f4f6f8;
+  margin-top: 60px;
 }
 
 /* MAIN CARD */
@@ -156,3 +157,4 @@
 .blueberry:hover {
   background: linear-gradient(135deg, #1f2933, #374151);
   transform: translateY(-2
+

@@ -59,8 +59,12 @@ const Features = () => {
         <div className="section-header">
           <h2>Our Core Purpose</h2>
           <p>
-At ZOZAC Community, we offer a range of impactful initiatives designed to train leaders, empower youths,
-            promote Peace & Unity, engage in community projects to drive sustainable development  alongside providing humanitarian assistant to vulnerable populations.
+At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society organization 
+            dedicated to empowering the next generation of leaders and creating a brighter 
+            future for all. Our focus is to empower leaders, support community development, 
+            and promote positive change. Our mission is built on the belief that every individual
+            has the potential to make a difference, while we strive to create opportunities for
+            growth, development, and positive impact in our communities through areas like:
           </p>
         </div>
         <div className="features-grid">
@@ -80,6 +84,7 @@ At ZOZAC Community, we offer a range of impactful initiatives designed to train 
 };
 
 export default Features;
+
 
 
 

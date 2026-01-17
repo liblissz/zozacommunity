@@ -17,7 +17,7 @@ const heroImg = "/img30.jpg";
 const Pricing = () => {
   return (
     <section id="pricing" className="pricing">
-      <div className="container">
+      <div className="container" style={{padding: "10px"}}>
 
         {/* Newsletter Section */}
         <div className="section-header">
@@ -32,6 +32,9 @@ const Pricing = () => {
               flexDirection: "column",
               padding: "2rem",
               gap: "2rem",
+              justifyContent: "center",
+              alignItems: "center",
+              
             }}
           >
             <h2 style={{ textAlign: "center", color: "#333" }}>
@@ -114,5 +117,6 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
 
 

@@ -185,7 +185,8 @@ We are dedicated to making a positive impact in the lives of individuals and com
 Promoting community peace and conflict resolution through training, mediation, 
                      and community engagement, and to create a culture of peace, tolerance, 
                      and understanding.
-
+ <br/>
+                  <br/>
                      <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
@@ -205,7 +206,8 @@ Promoting community peace and conflict resolution through training, mediation,
                   <br/>
 Provides food assistance and nutrition support to vulnerable individuals 
                      and communities, ensuring everyone has access to nutritious food.
-
+ <br/>
+                  <br/>
                      <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
@@ -231,7 +233,10 @@ Provides food assistance and nutrition support to vulnerable individuals
             <br/>
                   <br/>
 Supports education and increases access to quality learning, ensuring every child has the opportunity to learn and succeed.
-                     <b>Objectives:</b>
+                      <br/>
+                  <br/>
+                      
+                      <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
                        <li>Provide educational resources and materials</li>
@@ -254,7 +259,10 @@ Supports education and increases access to quality learning, ensuring every chil
             <br/>
                   <br/>
 Recognize and celebrate community leaders and innovators, inspiring and motivating others to make a positive impact.
-                     <b>Objectives:</b>
+                      <br/>
+                  <br/>
+                       
+                       <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
                        <li>Recognize outstanding community contributions</li>
@@ -280,7 +288,10 @@ Recognize and celebrate community leaders and innovators, inspiring and motivati
                   <br/>
 ZOZAC Health Center delivers healthcare services (first aids) and promotes well-being.
                     Our goal is to ensure everyone has access to quality healthcare.
-                     <b>Objectives:</b>
+                      <br/>
+                  <br/>
+                    
+                    <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
                        <li>Provide first aids</li>
@@ -305,8 +316,9 @@ ZOZAC Health Center delivers healthcare services (first aids) and promotes well-
             <br/>
                   <br/>
 Empowers women and promotes gender equality and support women development and leadership.
-                    <br/>
-                     <b>Objectives:</b>
+                    <br/> <br/>
+                     
+                    <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
                        <li>Support women economic empowerment</li>
@@ -338,7 +350,7 @@ Empowers women and promotes gender equality and support women development and le
 Bringing together other organizations for collaboration and capacity-building, and our goal
                     is to strengthen local 
                     organization for community development and promote collective impact.
-                    <br/>
+                    <br/> <br/>
                      <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
@@ -365,7 +377,7 @@ Bringing together other organizations for collaboration and capacity-building, a
             <br/>
                   <br/>
 Offer training, research, and capacity and skills building initiatives, support personal and collective development.
-                    <br/>
+               <br/> <br/>
                      <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
@@ -395,7 +407,8 @@ Offer training, research, and capacity and skills building initiatives, support 
             <br/>
                   <br/>
 About showcases and inspiring innovative ideas and supports entrepreneurship.      <br/>
-                     <b>Objectives:</b>
+                     <br/> <br/>
+                    <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
                        <li>Provide a platform for entrepreneurs to pitch their ideas</li>
@@ -418,7 +431,7 @@ About showcases and inspiring innovative ideas and supports entrepreneurship.   
             <br/>
                   <br/>
 ZOZAC Youth Fellowship Program supports youth development, leadership,
-                   and mentorship with the goal is to empower young people to become leaders and change-makers.    <br/>
+                   and mentorship with the goal is to empower young people to become leaders and change-makers.   <br/> <br/>
                      <b>Objectives:</b>
                         <br/>
                        <ul className="grape">
@@ -477,6 +490,7 @@ ZOZAC Youth Fellowship Program supports youth development, leadership,
 };
 
 export default About;
+
 
 
 

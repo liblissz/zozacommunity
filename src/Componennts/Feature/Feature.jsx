@@ -11,11 +11,7 @@ import {
 import './Feature.css';
 
 const features = [
-  {
-    icon: <FaChalkboardTeacher />,
-    title: 'Peace Building , Education & Youth Empowerment',
-    description: 'Supporting young people in acquiring skills and being self-sustainable with opportunities that enable them to contribute to their ',
-  },
+
    {
     icon: <FaChalkboardTeacher />,
     title: 'Peace Building , Education & Youth Empowerment',
@@ -105,6 +101,7 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
 };
 
 export default Features;
+
 
 
 

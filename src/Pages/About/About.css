@@ -1,4 +1,3 @@
-
 .img {
   max-width: 100%;
   height: auto;
@@ -11,7 +10,7 @@ ul.grape {
   margin: 0;
 }
 
-.banana {
+/* .banana {
   max-width: 1200px;
   margin-top: 90px !important ;
   padding: 0 20px;
@@ -20,13 +19,23 @@ ul.grape {
 
   gap: 40px;
   justify-content: space-between;
-}
+} */
 
 
-.banana {
-  max-width: 1400px; /* or use 100% for full screen width */
+/* .banana {
+  max-width: 1400px; 
   width: 100%;
   margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+} */
+.banana {
+  max-width: 1200px;
+  width: 100%;
+  margin: 90px auto 0;
   padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +117,7 @@ ul.grape {
 .pineapple {
   display: inline-block;
   padding: 12px 30px;
-  background-color:#2d5b1a !important;
+  background-color: #2d5b1a !important;
   color: #fff;
   font-weight: 600;
   text-decoration: none;

@@ -13,13 +13,23 @@ import './Feature.css';
 const features = [
   {
     icon: <FaChalkboardTeacher />,
-    title: 'Leadership & Capacity Building',
+    title: 'Peace Building , Education & Youth Empowerment',
+    description: 'Supporting young people in acquiring skills and being self-sustainable with opportunities that enable them to contribute to their ',
+  },
+   {
+    icon: <FaChalkboardTeacher />,
+    title: 'Peace Building , Education & Youth Empowerment',
+    description: 'Providing quality education and personal growth opportunities to empower individuals and communities.',
+  },
+    {
+    icon: <FaChalkboardTeacher />,
+    title: 'Social Cohesion & Community Development',
     description: 'Empowering youth and communities through innovative leadership programs.',
   },
   {
     icon: <FaBriefcase />,
-    title: 'Humanitarian Supports',
-    description: 'Providing assistant for vulnerable youths and people living with disabilities for community development.',
+    title: 'Humanitarian Aid',
+    description: 'Fostering inclusiveness, trust and sustainable development and improving the quality of life for communities through initiatives that promote economic growth, social justice and community empowerment.',
   },
   // {
   //   icon: <FaLaptopCode />,
@@ -95,6 +105,7 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
 };
 
 export default Features;
+
 
 
 

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './About.css';
 import img1  from '../../assets/WhatsApp Image 2025-07-04 at 10.09.35_3aa4d729.jpg'
 import img2 from '../../assets/WhatsApp Image 2025-07-04 at 10.09.30_441aaa22.jpg'
 import Team from '../../Componennts/Team/Team';
 
 const About = () => {
+
+  const [open, setopen] = useState(false);
   return (
     <>
     <section className="apple">
@@ -19,22 +21,71 @@ const About = () => {
 
               </h2>
               <div className="text">
-                We are a dynamic association dedicated to training innovative leaders for a brighter tomorrow. Our focus areas 
-                include promoting education, peace, and unity, youth employment, while providing humanitarian assistance to
-                grassroots communities alongside environmental preservation.
-                Our association was founded by Afuh Alfred Ngum, who rose above adversity after being abandoned by his father 
-                at the age of 3. Witnessing the struggles of vulnerable youths, lack of education opportunities, access to 
-                employment, skills, so, he decided that, he will create a better future for others for the sake of community 
-                development starting with grassroots efforts, he eventually registered ZOZAC Community in 2022, ZOZAC, a word 
-                from his created language which means "Togetherness Is Strength."
-
-
+             At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society organization 
+                dedicated to empowering the next generation of leaders and creating a brighter future for all. 
+                Our focus is to empower leaders, support community development, and promote positive change.
+                Our mission is built on the belief that every individual has the potential to make a difference,
+                while we strive to 
+                create opportunities for growth, development, and positive impact in our communities through areas like:
               </div>
-                  <h2>
-Mission & Vision
+              <button style={{width: "100%", padding: "12px", background: "#333" }} onClick={()=> setopen(!open)}>Read More...</button>
+
+              {open  && 
+                <ul className="grape">
+                <h1>What We Do</h1>
+        <br/>
+                <li>
+                  <b>Education: </b>
+                  <br/>
+                  Providing quality education and personal growth opportunities to empower 
+                  individuals and communities.
+              </li>
+              <li>
+                  <b>Peace Building:  </b>
+                  <br/>
+           Promoting inclusivity and community cohesion through initiatives 
+                that promote understanding, tolerance, and mutual respect.
+              </li>
+
+        <li>
+                  <b>Youth Empowerment:  </b>
+                  <br/>
+      Supporting young people in acquiring skills and being self-sustainable with
+          opportunities that enable them to contribute to their communities.
+              </li>
+
+                <li>
+                  <b>Humanitarian Aid:  </b>
+                  <br/>
+   Providing support to vulnerable individuals and 
+                  communities in need, including emergency relief and long-term development programs.
+              </li>
+
+        <li>
+                  <b>Social Cohesion:  </b>
+                  <br/>
+Building strong, inclusive, and resilient communities by promoting a sense of belonging, trust, and cooperation among community members.
+              </li>
+
+           <li>
+                  <b>Community Development:  </b>
+                  <br/>
+Fostering sustainable development and improving the quality of life for communities through initiatives that promote economic growth, social justice and community empowerment. 
+           </li>
 
 
-              </h2>
+
+                   <li>
+                  <b>Environmental Preservation:   </b>
+                  <br/>
+Protecting and conserving the natural environment, promoting sustainable practices and mitigating the impact of climate change.
+                   </li>
+        
+      </ul>}
+
+
+              
+                  <h2>Mission & Vision</h2>
               <div className="text">
             Mission: Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
                 <br/>
@@ -44,8 +95,7 @@ Vision: Be the leading force transforming, educating, and empowering individuals
 
               </div>
               <ul className="grape">
-                <h1>What We Do
-</h1>
+                <h1>What We Do</h1>
                 <li>- Mission: Empower individuals with self-awareness, discipline, and the willpower to lead themselves and others towards a positive destination built on trust.
 - Vision: Be the leading force transforming, educating, and empowering individuals, groups, and communities with knowledge to prepare for tomorrow and the next generation.
 </li>
@@ -106,6 +156,7 @@ Vision: Be the leading force transforming, educating, and empowering individuals
 };
 
 export default About;
+
 
 
 

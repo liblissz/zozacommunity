@@ -85,7 +85,7 @@ const Navbar = () => {
           <li><a href="#features">Features</a></li>
           <li><a href="#use-cases">Information</a></li>
           <li><a href="#samples">Posts</a></li>
-          <li><a href="#pricing">Unity</a></li>
+          <li><a href="#pricing">Report</a></li>
           <li><Link to="/about">About</Link></li>
           <li>
             <a href="tel:674274276" target="_blank" rel="noopener noreferrer">
@@ -124,3 +124,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

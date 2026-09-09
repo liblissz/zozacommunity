@@ -1,23 +1,23 @@
 import React from 'react';
-import { 
-  FaChalkboardTeacher, 
-  FaBriefcase, 
-  FaLaptopCode, 
-  FaCogs, 
-  FaShieldAlt, 
-  FaPaintBrush, 
-  FaHandsHelping 
+import {
+  FaChalkboardTeacher,
+  FaBriefcase,
+  FaLaptopCode,
+  FaCogs,
+  FaShieldAlt,
+  FaPaintBrush,
+  FaHandsHelping
 } from 'react-icons/fa';
 import './Feature.css';
 
 const features = [
 
-   {
+  {
     icon: <FaChalkboardTeacher />,
     title: 'Peace Building , Education & Youth Empowerment',
     description: 'Providing quality education and personal growth opportunities to empower individuals and communities.',
   },
-    {
+  {
     icon: <FaChalkboardTeacher />,
     title: 'Social Cohesion & Community Development',
     description: 'Empowering youth and communities through innovative leadership programs.',
@@ -65,24 +65,28 @@ const Features = () => {
         <div className="section-header">
           <h2>About ZOZAC Community</h2>
           <p>
-At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society organization 
-            dedicated to empowering the next generation of leaders and creating a brighter 
-            future for all. Our focus is to empower leaders, support community development, 
+            At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society organization
+            dedicated to empowering the next generation of leaders and creating a brighter
+            future for all. Our focus is to empower leaders, support community development,
             and promote positive change. Our mission is built on the belief that every individual
             has the potential to make a difference, while we strive to create opportunities for
             growth, development, and positive impact in our communities through areas like:
           </p>
-          <br/>
+          <br />
 
-                <button className="hover" style={{width: "100%", padding: "12px",
-                              background: "green", color: "#fff", border: "none", outline: "none" }} 
-                onClick={()=> window.location.href = "/about"}>{"Read More"}</button>
+          <button
+            type="button"
+            className="feature-read-more"
+            onClick={() => window.location.href = "/about"}
+          >
+            Read More
+          </button>
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <div className="section-header">
-        <h2> Our Focus Thermatic Areas:</h2>
+          <h2> Our Focus Thermatic Areas:</h2>
         </div>
         <div className="features-grid">
           {features.map((feature, index) => (
@@ -92,7 +96,7 @@ At ZOZAC Community, we are a dynamic non-governmental, non-profit civil society 
               <p>{feature.description}</p>
             </div>
           ))}
-        
+
 
         </div>
       </div>

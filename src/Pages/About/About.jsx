@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import img1 from '../../assets/WhatsApp Image 2025-07-04 at 10.09.35_3aa4d729.jpg'
 import img2 from '../../assets/WhatsApp Image 2025-07-04 at 10.09.30_441aaa22.jpg'
@@ -9,6 +9,24 @@ import './About.css';
 const About = () => {
 
   const [open, setopen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    { src: img1, alt: 'ZOZAC Community gathering' },
+    { src: img2, alt: 'ZOZAC Community in action' },
+  ];
+
+  useEffect(() => {
+    const slideTimer = window.setInterval(() => {
+      setCurrentSlide((slide) => (slide + 1) % slides.length);
+    }, 4500);
+
+    return () => window.clearInterval(slideTimer);
+  }, [slides.length]);
+
+  const changeSlide = (direction) => {
+    setCurrentSlide((slide) => (slide + direction + slides.length) % slides.length);
+  };
+
   return (
     <>
       <section className="apple">
@@ -466,20 +484,39 @@ const About = () => {
           {/* Image Column */}
           <div className="watermelon">
             <div className="plum">
-              <figure className="cherry">
-                <img
-                  src={img1}
-                  alt="Image 1 about"
-                  className="img"
-                />
-              </figure>
-              <figure className="blueberry">
-                <img
-                  src={img2}
-                  alt="Image 2 about"
-                  className="img"
-                />
-              </figure>
+              <div className="about-slider" aria-label="ZOZAC Community photos">
+                <div
+                  className="about-track"
+                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                >
+                  {slides.map((slide) => (
+                    <figure className="about-slide" key={slide.src}>
+                      <img src={slide.src} alt={slide.alt} className="img" />
+                    </figure>
+                  ))}
+                </div>
+              </div>
+              <div className="about-slider-controls">
+                <button type="button" onClick={() => changeSlide(-1)} aria-label="Previous photo">
+                  Previous
+                </button>
+                <div className="about-slider-dots" role="tablist" aria-label="Choose a photo">
+                  {slides.map((slide, index) => (
+                    <button
+                      type="button"
+                      key={slide.src}
+                      className={index === currentSlide ? 'is-active' : ''}
+                      onClick={() => setCurrentSlide(index)}
+                      aria-label={`Show photo ${index + 1}`}
+                      aria-selected={index === currentSlide}
+                      role="tab"
+                    />
+                  ))}
+                </div>
+                <button type="button" onClick={() => changeSlide(1)} aria-label="Next photo">
+                  Next
+                </button>
+              </div>
             </div>
           </div>
         </div>

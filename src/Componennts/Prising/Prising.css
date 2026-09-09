@@ -126,15 +126,219 @@
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: var(--primary-color);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
 }
+
 @media (max-width: 500px) {
-  .increasesize{
+  .increasesize {
     width: 500px !important;
+  }
+}
+
+.pricing {
+  --pricing-ink: #183126;
+  --pricing-green: #1f542f;
+  --pricing-deep: #123b25;
+  --pricing-muted: #64746a;
+  --pricing-lime: #b8d58a;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 6rem 0 7rem;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(184, 213, 138, 0.28), transparent 23rem),
+    linear-gradient(135deg, #f7f8f1 0%, #eef3e9 100%);
+}
+
+.pricing::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -13rem;
+  left: -10rem;
+  width: 28rem;
+  height: 28rem;
+  border: 1px solid rgba(31, 84, 47, 0.12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3rem rgba(31, 84, 47, 0.035), 0 0 0 7rem rgba(31, 84, 47, 0.02);
+}
+
+.pricing .pricing-container {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-intro {
+  max-width: 56rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.pricing-intro>span,
+.pricing-kicker,
+.pricing-report-card-header>span {
+  display: block;
+  color: var(--pricing-green);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pricing-intro>span {
+  margin-bottom: 1rem;
+}
+
+.pricing-intro>span::before {
+  content: '';
+  display: inline-block;
+  width: 2.5rem;
+  height: 2px;
+  margin: 0 0.65rem 0.2rem 0;
+  background: var(--pricing-lime);
+}
+
+.pricing-intro h3 {
+  margin-bottom: 1rem;
+  color: var(--pricing-ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.pricing-intro p {
+  max-width: 34rem;
+  margin: 0 auto;
+  color: var(--pricing-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.pricing .pricing-reports {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid rgba(31, 84, 47, 0.1);
+  border-radius: 0.6rem;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 1.5rem 4rem rgba(18, 59, 37, 0.08);
+}
+
+.pricing-reports-heading {
+  text-align: center;
+}
+
+.pricing-kicker {
+  margin-bottom: 0.65rem;
+}
+
+.pricing-reports-heading h2 {
+  margin: 0;
+  color: var(--pricing-ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.pricing-report-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: min(100%, 48rem);
+  gap: 1.5rem;
+}
+
+.pricing-report-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid rgba(31, 84, 47, 0.12);
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 1rem 2.5rem rgba(18, 59, 37, 0.08);
+}
+
+.pricing-report-card-header {
+  padding: 0.6rem 0.5rem 1.2rem;
+}
+
+.pricing-report-card-header>span {
+  margin-bottom: 0.55rem;
+  color: #b97927;
+  font-size: 0.66rem;
+}
+
+.pricing-report-card-header h3 {
+  margin: 0;
+  color: var(--pricing-ink);
+  font-size: 1.25rem;
+}
+
+.pricing-report-image {
+  width: 100%;
+  height: 18rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.pricing-report-preview {
+  width: 100%;
+  min-height: 26rem;
+  border: 1px solid rgba(31, 84, 47, 0.12);
+  border-radius: 0.3rem;
+  background: #f4f7f0;
+}
+
+.pricing-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  align-self: flex-start;
+  margin-top: 1.2rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: 0.3rem;
+  background: var(--pricing-deep);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.pricing-download:hover,
+.pricing-download:focus-visible {
+  background: var(--pricing-green);
+  color: #fff;
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 59, 37, 0.18);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .pricing {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .pricing .pricing-reports {
+    padding: 1rem;
+  }
+
+  .pricing-report-image {
+    height: 13rem;
+  }
+
+  .pricing-report-preview {
+    min-height: 20rem;
   }
 }

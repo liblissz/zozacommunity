@@ -7,7 +7,7 @@ import Team from "../Team/Team";
 const pdfFiles = [
   {
     title: "Quarterly Newsletter",
-    url:  "/report.pdf",
+    url: "/report.pdf",
   },
 ];
 
@@ -17,93 +17,48 @@ const heroImg = "/img30.jpg";
 const Pricing = () => {
   return (
     <section id="pricing" className="pricing">
-      <div className="container" style={{padding: "10px"}}>
+      <div className="container pricing-container">
 
         {/* Newsletter Section */}
-        <div className="section-header">
-          <center>
-            <h3 style={{ fontSize: "19px" }}>NEWSLETTER</h3>
-          </center>
+        <div className="pricing-intro">
+          <span>Community updates</span>
+          <h3>Newsletter</h3>
+          <p>Read the latest stories, reports, and progress from ZOZAC Community.</p>
 
-          <section
-            style={{
-              background: "#f9f9f9",
-              display: "flex",
-              flexDirection: "column",
-              padding: "2rem",
-              gap: "2rem",
-              justifyContent: "center",
-              alignItems: "center",
-              
-            }}
-          >
-            <h2 style={{ textAlign: "center", color: "#333" }}>
-              Our Reports
-            </h2>
+          <section className="pricing-reports">
+            <div className="pricing-reports-heading">
+              <span className="pricing-kicker">Stay informed</span>
+              <h2>Our Reports</h2>
+            </div>
 
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
-                gap: "2rem",
-              }}
-            >
+            <div className="pricing-report-grid">
               {pdfFiles.map((pdf, i) => (
-                <div
-                  key={i}
-                  style={{
-                    background: "#fff",
-                    borderRadius: "12px",
-                    boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
-                    padding: "1rem",
-                    textAlign: "center",
-                  }}
-                >
-                  <h3
-                    style={{
-                      marginBottom: "1rem",
-                      fontSize: "1.2rem",
-                      color: "#444",
-                    }}
-                  >
-                    {pdf.title}
-                  </h3>
+                <article className="pricing-report-card" key={i}>
+                  <div className="pricing-report-card-header">
+                    <span>Featured report</span>
+                    <h3>{pdf.title}</h3>
+                  </div>
 
                   <img
                     src={heroImg}
                     alt="food program"
-                    style={{
-                      height: "300px",
-                      borderRadius: "10px",
-                      maxWidth: "100%",
-                      marginBottom: "1rem",
-                    }}
+                    className="pricing-report-image"
                   />
 
                   <embed
                     src={pdf.url}
                     type="application/pdf"
-                    width="100%"
-                    height="400px"
-                    style={{ borderRadius: "8px" }}
+                    className="pricing-report-preview"
                   />
 
                   <a
                     href={pdf.url}
                     download
-                    style={{
-                      display: "inline-block",
-                      marginTop: "1rem",
-                      padding: "0.6rem 1.2rem",
-                      background: "#2d5b1a",
-                      color: "#fff",
-                      borderRadius: "8px",
-                      textDecoration: "none",
-                    }}
+                    className="pricing-download"
                   >
-                    Download PDF
+                    Download report <span aria-hidden="true">↓</span>
                   </a>
-                </div>
+                </article>
               ))}
             </div>
           </section>
